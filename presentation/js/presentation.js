@@ -249,18 +249,50 @@ const Presentation = (function () {
       }
     });
 
-    // Touch Swipe Support
+    // Touch Swipe & Finger Drag Gesture Support (Mobile / Tablet)
     let touchStartX = 0;
+    let touchStartY = 0;
     let touchEndX = 0;
+    let touchEndY = 0;
+    let isTouchActive = false;
+
     document.addEventListener('touchstart', (e) => {
-      touchStartX = e.changedTouches[0].screenX;
+      if (e.touches.length > 1) return; // Ignore pinch/zoom
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchEndX = touchStartX;
+      touchEndY = touchStartY;
+      isTouchActive = true;
     }, { passive: true });
+
+    document.addEventListener('touchmove', (e) => {
+      if (!isTouchActive || e.touches.length > 1) return;
+      touchEndX = e.touches[0].clientX;
+      touchEndY = e.touches[0].clientY;
+    }, { passive: true });
+
     document.addEventListener('touchend', (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      if (touchStartX - touchEndX > 50) {
-        nextSlide();
-      } else if (touchEndX - touchStartX > 50) {
-        prevSlide();
+      if (!isTouchActive) return;
+      isTouchActive = false;
+
+      // Do not trigger slide swipe when interacting with scrollable tables or buttons
+      if (e.target.closest('.table-container') || e.target.closest('table') || e.target.closest('button')) {
+        return;
+      }
+
+      const deltaX = touchEndX - touchStartX;
+      const deltaY = touchEndY - touchStartY;
+
+      // Ensure horizontal swipe is intentional:
+      // Minimum distance: 40px, and horizontal displacement must be dominant over vertical scroll
+      if (Math.abs(deltaX) > 40 && Math.abs(deltaX) > Math.abs(deltaY) * 1.25) {
+        if (deltaX < 0) {
+          // Dragged / swiped Left -> Advance to Next Slide
+          nextSlide();
+        } else {
+          // Dragged / swiped Right -> Go to Previous Slide
+          prevSlide();
+        }
       }
     }, { passive: true });
 

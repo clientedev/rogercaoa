@@ -1534,149 +1534,6 @@ body.super-zoom .data-table tbody tr:hover .badge-pill {
    RESPONSIVE MOBILE VIEWPORT (USER REQUIREMENT)
    When accessed on mobile or screen width <= 1024px
    ========================================================= */
-@media (max-width: 1024px) {
-  html, body {
-    overflow-y: auto !important;
-    height: auto !important;
-  }
-
-  .presentation-wrapper {
-    height: auto !important;
-    min-height: 100vh;
-    overflow-y: auto !important;
-    display: block !important;
-    padding-bottom: 80px;
-  }
-
-  #slide-stage {
-    position: static !important;
-    width: 100% !important;
-    height: auto !important;
-    transform: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-  }
-
-  .slide {
-    position: relative !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 100vh;
-    opacity: 0;
-    display: none !important;
-    transform: none !important;
-    padding-bottom: 30px;
-  }
-
-  .slide.active {
-    display: flex !important;
-    opacity: 1 !important;
-  }
-
-  /* Cover on Mobile */
-  .cover-content {
-    flex-direction: column !important;
-    padding: 40px 20px !important;
-    gap: 30px !important;
-    text-align: center;
-  }
-
-  .cover-left {
-    align-items: center;
-    max-width: 100% !important;
-  }
-
-  .cover-title {
-    font-size: 36px !important;
-  }
-
-  .cover-desc {
-    font-size: 16px !important;
-  }
-
-  .cover-pillars-strip {
-    grid-template-columns: repeat(2, 1fr) !important;
-    width: 100%;
-  }
-
-  .cover-qr-card {
-    width: 100% !important;
-    max-width: 340px !important;
-    padding: 24px !important;
-  }
-
-  /* Slide Body & Headers on Mobile */
-  .slide-header {
-    height: auto !important;
-    padding: 20px 20px 10px 20px !important;
-    flex-direction: column !important;
-    gap: 12px;
-  }
-
-  .slide-title {
-    font-size: 24px !important;
-  }
-
-  .header-right {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .slide-body {
-    padding: 10px 16px 20px 16px !important;
-    gap: 16px !important;
-  }
-
-  /* Force Grid to Stack on Mobile */
-  .kpi-metric-strip {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 10px !important;
-  }
-
-  .insights-strip {
-    grid-template-columns: 1fr !important;
-    height: auto !important;
-    gap: 10px !important;
-  }
-
-  div[style*="grid-template-columns"] {
-    grid-template-columns: 1fr !important;
-  }
-
-  .slide-footer {
-    padding: 12px 20px !important;
-    flex-direction: column;
-    gap: 6px;
-    height: auto !important;
-  }
-
-  .table-container {
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .data-table {
-    min-width: 480px;
-  }
-
-  /* Mobile Toolbar */
-  .nav-toolbar {
-    width: calc(100% - 20px) !important;
-    padding: 6px 10px !important;
-    bottom: 8px !important;
-    justify-content: space-between;
-  }
-
-  .nav-btn {
-    font-size: 11px !important;
-    padding: 6px 8px !important;
-  }
-
-  .side-nav-zone {
-    display: none !important;
-  }
-}
-
 /* Print Styles */
 @media print {
   body { background: transparent !important; }
@@ -2223,4 +2080,428 @@ body.super-zoom tbody tr:hover td strong {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 15px;
+}
+
+
+/* ==========================================================================
+   MOBILE & TABLET RESPONSIVE ENGINE (TOUCH, NO QR CODE, ONLY PASSADORES)
+   ========================================================================== */
+
+.mobile-swipe-indicator {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  html, body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .presentation-wrapper {
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    display: block !important;
+    padding-bottom: 95px !important;
+  }
+
+  #slide-stage {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    transform: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+  .slide {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    opacity: 0;
+    display: none !important;
+    transform: none !important;
+    padding-bottom: 95px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .slide.active {
+    display: flex !important;
+    flex-direction: column !important;
+    opacity: 1 !important;
+  }
+
+  /* ----------------------------------------------------
+     COVER SLIDE ON MOBILE (SEM QR CODE, 100% RESPONSIVO)
+     ---------------------------------------------------- */
+  .cover-content {
+    flex-direction: column !important;
+    padding: 32px 18px 50px 18px !important;
+    gap: 20px !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .cover-left {
+    align-items: center !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .cover-left div[style*="display: flex"] {
+    justify-content: center !important;
+    margin-bottom: 18px !important;
+  }
+
+  .cover-left div[style*="display: flex"] img {
+    height: 52px !important;
+  }
+
+  .cover-tag-badge {
+    margin-bottom: 14px !important;
+    font-size: 11px !important;
+    padding: 4px 12px !important;
+  }
+
+  .cover-title {
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .cover-desc {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    max-width: 520px !important;
+    margin-bottom: 22px !important;
+    color: #CBD5E0 !important;
+  }
+
+  .cover-pillars-strip {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    width: 100% !important;
+    max-width: 460px !important;
+    margin: 0 auto !important;
+  }
+
+  .cover-pillar-card {
+    padding: 14px 10px !important;
+    border-radius: 12px !important;
+  }
+
+  .cover-pillar-card .pillar-val {
+    font-size: 24px !important;
+  }
+
+  .cover-pillar-card .pillar-lbl {
+    font-size: 11px !important;
+  }
+
+  /* REGRA CRÍTICA: NA VERSÃO MOBILE O QR CODE NÃO APARECE */
+  .cover-qr-card {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Indicador elegante de arrastar com o dedo na capa */
+  .mobile-swipe-indicator {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-top: 20px !important;
+    padding: 10px 20px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(100, 194, 149, 0.4) !important;
+    border-radius: 30px !important;
+    color: var(--caoa-mint-light) !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+    cursor: pointer !important;
+  }
+
+  /* ----------------------------------------------------
+     SLIDE HEADERS & FOOTERS ON MOBILE
+     ---------------------------------------------------- */
+  .slide-header {
+    height: auto !important;
+    padding: 16px 16px 8px 16px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  .slide-header .header-left {
+    width: 100% !important;
+  }
+
+  .slide-title {
+    font-size: 19px !important;
+    line-height: 1.25 !important;
+    margin-top: 4px !important;
+  }
+
+  .slide-subtitle {
+    font-size: 12.5px !important;
+    line-height: 1.4 !important;
+  }
+
+  .header-right {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-top: 6px !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.06) !important;
+  }
+
+  .header-logo {
+    height: 26px !important;
+  }
+
+  .header-action-btn {
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+  }
+
+  .slide-footer {
+    padding: 12px 16px 18px 16px !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+    text-align: center !important;
+    height: auto !important;
+    font-size: 11px !important;
+  }
+
+  /* ----------------------------------------------------
+     SLIDE BODY & COMPONENT STACKING
+     ---------------------------------------------------- */
+  .slide-body {
+    padding: 8px 12px 95px 12px !important;
+    gap: 14px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    flex: none !important;
+    box-sizing: border-box !important;
+  }
+
+  div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .kpi-metric-strip {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  .insights-strip {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  .card {
+    width: 100% !important;
+    height: auto !important;
+    min-height: unset !important;
+    flex: none !important;
+    padding: 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  .card-title {
+    font-size: 15px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .card div[style*="min-height"] {
+    min-height: 240px !important;
+    height: 240px !important;
+    width: 100% !important;
+    position: relative !important;
+  }
+
+  /* Tiggo 7 & Tiggo 5x Spotlights (Slides 14 & 15) */
+  #slide-14 div[style*="grid-template-columns: 1fr 1fr"],
+  #slide-15 div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  #slide-15 .card div[style*="display: flex"][style*="gap: 18px"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+
+  #slide-15 img[src*="tiggo"] {
+    width: 100% !important;
+    height: 180px !important;
+    max-height: 200px !important;
+    object-fit: cover !important;
+  }
+
+  #slide-14 img[src*="tiggo"] {
+    width: 100% !important;
+    height: 140px !important;
+    object-fit: cover !important;
+  }
+
+  /* ----------------------------------------------------
+     TABELAS RESPONSIVAS NO MOBILE COM SCROLL SUAVE
+     ---------------------------------------------------- */
+  .table-container {
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    border-radius: 8px !important;
+    border: 1px solid #E2E8F0 !important;
+    margin: 6px 0 !important;
+    padding: 2px !important;
+  }
+
+  .data-table {
+    min-width: 480px !important;
+    width: 100% !important;
+  }
+
+  .data-table th {
+    font-size: 12.5px !important;
+    padding: 9px 10px !important;
+    white-space: nowrap !important;
+  }
+
+  .data-table td {
+    font-size: 13.5px !important;
+    padding: 8px 10px !important;
+    white-space: nowrap !important;
+  }
+
+  .data-table td strong {
+    font-size: 14.5px !important;
+  }
+
+  .data-table tr.total-row td {
+    font-size: 15px !important;
+    padding: 9px 10px !important;
+  }
+
+  .data-table tbody tr:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background-color: rgba(100, 194, 149, 0.12) !important;
+  }
+
+  .data-table tbody tr:hover td {
+    font-size: 13.5px !important;
+  }
+
+  /* ----------------------------------------------------
+     BARRA DE NAVEGAÇÃO NO MOBILE: SÓ OS PASSADORES
+     ---------------------------------------------------- */
+  .nav-toolbar {
+    position: fixed !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    bottom: max(14px, env(safe-area-inset-bottom)) !important;
+    width: auto !important;
+    min-width: 200px !important;
+    max-width: 250px !important;
+    padding: 6px 12px !important;
+    border-radius: 35px !important;
+    background: rgba(18, 14, 51, 0.94) !important;
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    border: 1.5px solid rgba(100, 194, 149, 0.4) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55), 0 0 16px rgba(100, 194, 149, 0.3) !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    z-index: 99999 !important;
+  }
+
+  /* OCULTA ABSOLUTAMENTE TUDO QUE NÃO SEJA OS PASSADORES NO MOBILE */
+  .nav-toolbar .nav-pill-divider,
+  .nav-toolbar #btn-laser,
+  .nav-toolbar #btn-super-zoom,
+  .nav-toolbar button[onclick*="downloadPDFReport"],
+  .nav-toolbar button[onclick*="toggleFullscreen"],
+  .nav-toolbar .nav-pill-btn-hide,
+  .toolbar-show-btn,
+  .side-nav-zone,
+  .laser-pointer {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Apenas os botões de avançar, voltar e o contador visíveis */
+  .nav-toolbar .nav-pill-btn {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #FFFFFF !important;
+    padding: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .nav-toolbar .nav-pill-btn.primary {
+    background: var(--caoa-mint) !important;
+    color: #120E33 !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+  }
+
+  .nav-toolbar .nav-pill-btn svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .nav-toolbar .nav-pill-counter {
+    padding: 6px 12px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-radius: 18px !important;
+  }
+
+  .nav-toolbar .counter-text {
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    color: #FFFFFF !important;
+  }
+
+  .nav-toolbar .counter-sep {
+    color: var(--caoa-mint) !important;
+    margin: 0 4px !important;
+  }
 }
