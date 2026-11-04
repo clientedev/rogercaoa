@@ -2106,7 +2106,7 @@ body.super-zoom tbody tr:hover td strong {
     overflow-x: hidden !important;
     overflow-y: visible !important;
     display: block !important;
-    padding-bottom: 95px !important;
+    padding-bottom: 0 !important;
   }
 
   #slide-stage {
@@ -2130,7 +2130,7 @@ body.super-zoom tbody tr:hover td strong {
     opacity: 0;
     display: none !important;
     transform: none !important;
-    padding-bottom: 95px !important;
+    padding-bottom: 0 !important;
     box-sizing: border-box !important;
     overflow: visible !important;
   }
@@ -2303,7 +2303,7 @@ body.super-zoom tbody tr:hover td strong {
      SLIDE BODY & COMPONENT STACKING
      ---------------------------------------------------- */
   .slide-body {
-    padding: 8px 12px 95px 12px !important;
+    padding: 8px 14px 20px 14px !important;
     gap: 14px !important;
     display: flex !important;
     flex-direction: column !important;
@@ -2423,85 +2423,43 @@ body.super-zoom tbody tr:hover td strong {
   }
 
   /* ----------------------------------------------------
-     BARRA DE NAVEGAÇÃO NO MOBILE: SÓ OS PASSADORES
+     BARRA DE NAVEGAÇÃO NO MOBILE: TOTALMENTE REMOVIDA
+     Navegação 100% limpa por gestos de arrastar com o dedo!
+     Zero sobreposição: nenhum menu por cima do conteúdo ou dos gráficos!
      ---------------------------------------------------- */
-  .nav-toolbar {
-    position: fixed !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    bottom: max(14px, env(safe-area-inset-bottom)) !important;
-    width: auto !important;
-    min-width: 200px !important;
-    max-width: 250px !important;
-    padding: 6px 12px !important;
-    border-radius: 35px !important;
-    background: rgba(18, 14, 51, 0.94) !important;
-    backdrop-filter: blur(25px) !important;
-    -webkit-backdrop-filter: blur(25px) !important;
-    border: 1.5px solid rgba(100, 194, 149, 0.4) !important;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55), 0 0 16px rgba(100, 194, 149, 0.3) !important;
-    display: inline-flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 12px !important;
-    z-index: 99999 !important;
-  }
-
-  /* OCULTA ABSOLUTAMENTE TUDO QUE NÃO SEJA OS PASSADORES NO MOBILE */
-  .nav-toolbar .nav-pill-divider,
-  .nav-toolbar #btn-laser,
-  .nav-toolbar #btn-super-zoom,
-  .nav-toolbar button[onclick*="downloadPDFReport"],
-  .nav-toolbar button[onclick*="toggleFullscreen"],
-  .nav-toolbar .nav-pill-btn-hide,
+  .nav-toolbar,
   .toolbar-show-btn,
   .side-nav-zone,
   .laser-pointer {
     display: none !important;
     visibility: hidden !important;
     pointer-events: none !important;
-  }
-
-  /* Apenas os botões de avançar, voltar e o contador visíveis */
-  .nav-toolbar .nav-pill-btn {
-    width: 44px !important;
-    height: 44px !important;
-    min-width: 44px !important;
-    border-radius: 50% !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background: rgba(255, 255, 255, 0.12) !important;
-    color: #FFFFFF !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
     padding: 0 !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    overflow: hidden !important;
   }
 
-  .nav-toolbar .nav-pill-btn.primary {
-    background: var(--caoa-mint) !important;
-    color: #120E33 !important;
-    border-color: rgba(255, 255, 255, 0.4) !important;
+  .slide-footer {
+    padding: 14px 18px 24px 18px !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    text-align: left !important;
+    height: auto !important;
+    font-size: 12px !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+    margin-top: 12px !important;
   }
 
-  .nav-toolbar .nav-pill-btn svg {
-    width: 20px !important;
-    height: 20px !important;
-  }
-
-  .nav-toolbar .nav-pill-counter {
-    padding: 6px 12px !important;
-    background: rgba(255, 255, 255, 0.08) !important;
-    border-radius: 18px !important;
-  }
-
-  .nav-toolbar .counter-text {
-    font-size: 14px !important;
+  .slide-footer .slide-counter {
+    font-size: 13.5px !important;
     font-weight: 800 !important;
-    color: #FFFFFF !important;
-  }
-
-  .nav-toolbar .counter-sep {
-    color: var(--caoa-mint) !important;
-    margin: 0 4px !important;
+    color: var(--caoa-navy) !important;
+    background: rgba(29, 24, 75, 0.08) !important;
+    padding: 4px 12px !important;
+    border-radius: 12px !important;
   }
 }

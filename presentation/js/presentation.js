@@ -285,7 +285,7 @@ const Presentation = (function () {
 
       // Ensure horizontal swipe is intentional:
       // Minimum distance: 40px, and horizontal displacement must be dominant over vertical scroll
-      if (Math.abs(deltaX) > 40 && Math.abs(deltaX) > Math.abs(deltaY) * 1.25) {
+      if (Math.abs(deltaX) > 35 && Math.abs(deltaX) > Math.abs(deltaY) * 1.2) {
         if (deltaX < 0) {
           // Dragged / swiped Left -> Advance to Next Slide
           nextSlide();
