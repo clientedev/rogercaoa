@@ -132,7 +132,7 @@ const Presentation = (function () {
       const windowWidth = window.innerWidth;
       const windowHeight = window.innerHeight;
 
-      // On mobile screens (<= 1024px), CSS handles the layout natively without transforms
+      // On mobile screens (<= 1024px), CSS handles layout natively
       if (windowWidth <= 1024) {
         stage.style.transform = '';
         stage.style.left = '';
@@ -140,10 +140,12 @@ const Presentation = (function () {
         return;
       }
 
-      // Desktop 16:9 Scaling with toolbar clearance
-      const reservedBottom = isToolbarVisible ? 76 : 16;
-      const paddingX = 24;
-      const paddingY = 16;
+      const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
+
+      // In fullscreen, use full screen dimensions without reserved bottom
+      const reservedBottom = isFs ? 0 : (isToolbarVisible ? 60 : 12);
+      const paddingX = isFs ? 0 : 20;
+      const paddingY = isFs ? 0 : 12;
 
       const availW = Math.max(windowWidth - paddingX, 320);
       const availH = Math.max(windowHeight - reservedBottom - paddingY, 200);
@@ -152,19 +154,23 @@ const Presentation = (function () {
 
       stage.style.transform = `scale(${scale})`;
 
-      // Center stage horizontally
+      // Mathematically center stage
       const scaledW = 1920 * scale;
       const leftPos = (windowWidth - scaledW) / 2;
       stage.style.left = `${leftPos}px`;
 
-      // Center stage vertically in the area above the toolbar
       const scaledH = 1080 * scale;
-      const topPos = Math.max(((windowHeight - reservedBottom) - scaledH) / 2, 8);
+      const topPos = isFs ? Math.max((windowHeight - scaledH) / 2, 0) : Math.max(((windowHeight - reservedBottom) - scaledH) / 2, 6);
       stage.style.top = `${topPos}px`;
     }
 
     window.addEventListener('resize', resize);
     window.addEventListener('orientationchange', resize);
+    document.addEventListener('fullscreenchange', () => { setTimeout(resize, 60); setTimeout(resize, 200); });
+    document.addEventListener('webkitfullscreenchange', () => { setTimeout(resize, 60); setTimeout(resize, 200); });
+    document.addEventListener('mozfullscreenchange', () => { setTimeout(resize, 60); setTimeout(resize, 200); });
+    document.addEventListener('MSFullscreenChange', () => { setTimeout(resize, 60); setTimeout(resize, 200); });
+
     window._recalculateScale = resize;
     resize();
   }
@@ -331,13 +337,27 @@ const Presentation = (function () {
   }
 
   function toggleFullscreen() {
-    if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen().catch((err) => {
-        console.warn('Fullscreen request failed:', err);
-      });
+    const doc = document;
+    const docEl = document.documentElement;
+    const isFs = doc.fullscreenElement || doc.webkitFullscreenElement || doc.mozFullScreenElement || doc.msFullscreenElement;
+
+    if (!isFs) {
+      const req = docEl.requestFullscreen || docEl.webkitRequestFullscreen || docEl.mozRequestFullScreen || docEl.msRequestFullscreen;
+      if (req) {
+        req.call(docEl).then(() => {
+          setTimeout(() => { if (window._recalculateScale) window._recalculateScale(); }, 80);
+        }).catch((err) => {
+          console.warn('Fullscreen request failed:', err);
+        });
+      }
     } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
+      const exit = doc.exitFullscreen || doc.webkitExitFullscreen || doc.mozCancelFullScreen || doc.msExitFullscreen;
+      if (exit) {
+        exit.call(doc).then(() => {
+          setTimeout(() => { if (window._recalculateScale) window._recalculateScale(); }, 80);
+        }).catch((err) => {
+          console.warn('Exit fullscreen failed:', err);
+        });
       }
     }
   }
@@ -915,7 +935,8 @@ const Presentation = (function () {
     });
   }
 
-  return {
+  const Presentation = {
+    // Presentation Exports
     init,
     goToSlide,
     nextSlide,
@@ -923,13 +944,14 @@ const Presentation = (function () {
     toggleFullscreen,
     toggleAutoPlay,
     toggleOverview,
-    toggleCompareModal,
     toggleToolbar,
     toggleSuperZoom,
     toggleLaser,
     downloadPDFReport,
     closeModals
   };
+  window.Presentation = Presentation;
+  return Presentation;
 })();
 
 document.addEventListener('DOMContentLoaded', Presentation.init);
