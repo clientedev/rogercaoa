@@ -1,0 +1,12 @@
+*.py
+*.ps1
+extracted_media/
+ocr_extracted_data.json
+presentation_summary.json
+slides_14_15_dump.txt
+caoa_main_style.css
+caoa_theme.css
+*.log
+*.pptx
+.vercel
+node_modules
