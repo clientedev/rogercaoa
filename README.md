@@ -20,3 +20,4 @@ Apresentação corporativa padronizada em formato **16:9**, desenvolvida em HTML
 - `V`: Visualizar slide original do PPTX
 - `P`: Apresentação automática (Auto-play a cada 7s)
 - `B`: Ocultar / Exibir barra de controle inferior
+

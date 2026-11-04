@@ -1612,8 +1612,8 @@
       </footer>
     </section>
 
-    <!-- ==========================================
-         SLIDE 14: MATRIZ DOS 40 SEMINOVOS (MY24-26)
+        <!-- ==========================================
+         SLIDE 14: COMO ESTÃO OS 40 SEMINOVOS (MY24-26)
          ========================================== -->
     <section class="slide" id="slide-14">
       <header class="slide-header">
@@ -1629,37 +1629,53 @@
       </header>
 
       <div class="slide-body">
-        <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px; flex: 1;">
+        <div style="display: grid; grid-template-columns: 1.25fr 1fr; gap: 20px; flex: 1;">
           <!-- Scatter Plot Container -->
-          <div class="card" style="padding: 16px 20px; display: flex; flex-direction: column;">
-            <div class="card-title">Matriz Estratégica: Margem Bruta (%) vs Penetração de Mercado (%)</div>
+          <div class="card" style="padding: 18px 22px; display: flex; flex-direction: column;">
+            <div class="card-title" style="font-size: 16px; font-weight: 800; color: var(--caoa-navy); margin-bottom: 8px;">
+              Matriz Estratégica: Margem Bruta (%) vs Penetração de Mercado (%)
+            </div>
             <div style="flex: 1; position: relative; min-height: 270px;">
               <canvas id="chart-slide14"></canvas>
             </div>
-            <div style="display: flex; justify-content: space-between; font-size: 11px; font-weight: 700; color: var(--caoa-slate); margin-top: 6px;">
+            <div style="display: flex; justify-content: space-between; font-size: 12.5px; font-weight: 700; color: var(--caoa-slate); margin-top: 8px; padding-top: 6px; border-top: 1px dashed var(--caoa-card-border);">
               <span>← Menor Giro / Entrada Fácil</span>
-              <span>Zona de Equilíbrio</span>
+              <span style="color: var(--caoa-navy);">✦ Zona de Alta Rentabilidade ✦</span>
               <span>Maior Penetração / Alto Volume →</span>
             </div>
           </div>
 
           <!-- Highlights & Quadrants Info -->
           <div style="display: flex; flex-direction: column; gap: 14px;">
-            <!-- Tiggo 7 & Tiggo 5x Spotlight -->
-            <div class="card" style="background: linear-gradient(135deg, #1D184B 0%, #282163 100%); color: #FFFFFF; padding: 18px;">
-              <span style="font-size: 12px; font-weight: 700; color: var(--caoa-mint); text-transform: uppercase;">Destaques Absolutos do Mix</span>
-              <h3 style="font-size: 22px; font-weight: 800; color: #FFFFFF; margin-top: 4px;">Tiggo 7 & Tiggo 5x</h3>
+            <!-- Tiggo 7 & Tiggo 5x Spotlight with Real 0KM Photos -->
+            <div class="card" style="background: linear-gradient(135deg, #1D184B 0%, #282163 100%); color: #FFFFFF; padding: 18px; border-left: 6px solid var(--caoa-mint); box-shadow: 0 10px 30px rgba(29, 24, 75, 0.25);">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 12px; font-weight: 800; color: var(--caoa-mint); text-transform: uppercase; letter-spacing: 1px;">👑 Destaques Absolutos do Mix • ZERO KM</span>
+                <span style="background: rgba(100, 194, 149, 0.2); border: 1px solid rgba(100, 194, 149, 0.4); padding: 3px 10px; border-radius: var(--radius-full); font-size: 11px; font-weight: 700; color: #8FE3BA;">Líderes de Rentabilidade</span>
+              </div>
+              <h3 style="font-size: 22px; font-weight: 900; color: #FFFFFF; margin: 4px 0 12px 0;">Tiggo 7 & Tiggo 5x 0KM: As Estrelas da Rede</h3>
               
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px;">
-                <div style="background: rgba(255,255,255,0.08); padding: 12px; border-radius: 8px;">
-                  <div style="font-size: 16px; font-weight: 800; color: var(--caoa-mint);">Tiggo 7</div>
-                  <div style="font-size: 22px; font-weight: 900; color: #FFFFFF; margin-top: 2px;">11,5%</div>
-                  <div style="font-size: 12px; color: #D8DFE8;">Margem Bruta (Mercado: 32%)</div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+                <!-- Tiggo 7 Mini Card with Photo -->
+                <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(100,194,149,0.3); padding: 10px; border-radius: 10px; transition: transform 0.3s ease; position: relative;">
+                  <span style="position: absolute; top: 14px; right: 14px; background: rgba(18, 14, 51, 0.85); color: #8FE3BA; font-size: 9px; font-weight: 800; padding: 2px 5px; border-radius: 4px; border: 1px solid rgba(100,194,149,0.5);">NOVO 0KM</span>
+                  <img src="assets/tiggo7.jpg" alt="CAOA Chery Tiggo 7 Pro Sport 0KM" style="width: 100%; height: 95px; object-fit: cover; border-radius: 6px; margin-bottom: 8px; border: 1px solid rgba(255,255,255,0.2);">
+                  <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                    <div style="font-size: 17px; font-weight: 900; color: var(--caoa-mint);">Tiggo 7 Pro</div>
+                    <div style="font-size: 23px; font-weight: 900; color: #FFFFFF;">11,5%</div>
+                  </div>
+                  <div style="font-size: 11.5px; color: #D8DFE8; margin-top: 3px; font-weight: 600;">Margem Bruta (Mercado: 32%)</div>
                 </div>
-                <div style="background: rgba(255,255,255,0.08); padding: 12px; border-radius: 8px;">
-                  <div style="font-size: 16px; font-weight: 800; color: var(--caoa-mint);">Tiggo 5x</div>
-                  <div style="font-size: 22px; font-weight: 900; color: #FFFFFF; margin-top: 2px;">9,8%</div>
-                  <div style="font-size: 12px; color: #D8DFE8;">Margem Bruta (Mercado: 29%)</div>
+
+                <!-- Tiggo 5x Mini Card with Photo -->
+                <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(100,194,149,0.3); padding: 10px; border-radius: 10px; transition: transform 0.3s ease; position: relative;">
+                  <span style="position: absolute; top: 14px; right: 14px; background: rgba(18, 14, 51, 0.85); color: #8FE3BA; font-size: 9px; font-weight: 800; padding: 2px 5px; border-radius: 4px; border: 1px solid rgba(100,194,149,0.5);">NOVO 0KM</span>
+                  <img src="assets/tiggo5x.jpg" alt="CAOA Chery Tiggo 5x Pro Sport 0KM" style="width: 100%; height: 95px; object-fit: cover; border-radius: 6px; margin-bottom: 8px; border: 1px solid rgba(255,255,255,0.2);">
+                  <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                    <div style="font-size: 17px; font-weight: 900; color: #8FE3BA;">Tiggo 5x Pro</div>
+                    <div style="font-size: 23px; font-weight: 900; color: #FFFFFF;">9,8%</div>
+                  </div>
+                  <div style="font-size: 11.5px; color: #D8DFE8; margin-top: 3px; font-weight: 600;">Margem Bruta (Mercado: 29%)</div>
                 </div>
               </div>
             </div>
@@ -1667,19 +1683,19 @@
             <!-- Quadrant Strategy Guide -->
             <div class="card" style="flex: 1; padding: 14px 18px; display: flex; flex-direction: column; justify-content: space-around;">
               <div style="display: flex; align-items: center; gap: 10px;">
-                <span style="width: 12px; height: 12px; border-radius: 50%; background: var(--caoa-mint);"></span>
-                <span style="font-size: 13px; font-weight: 700; color: var(--caoa-navy);">Cenário Ideal:</span>
-                <span style="font-size: 13px; color: var(--caoa-slate);">Tiggo 7, Tiggo 5x, Kwid, Mobi, Onix, HB20 (Alta margem e giro)</span>
+                <span style="width: 13px; height: 13px; border-radius: 50%; background: var(--caoa-mint); flex-shrink: 0;"></span>
+                <span style="font-size: 13.5px; font-weight: 800; color: var(--caoa-navy);">Cenário Ideal:</span>
+                <span style="font-size: 13px; color: var(--caoa-charcoal); font-weight: 500;"><strong>Tiggo 7, Tiggo 5x</strong>, Kwid, Mobi, Onix, HB20 (Alta margem e giro)</span>
               </div>
               <div style="display: flex; align-items: center; gap: 10px;">
-                <span style="width: 12px; height: 12px; border-radius: 50%; background: var(--caoa-blue);"></span>
-                <span style="font-size: 13px; font-weight: 700; color: var(--caoa-navy);">Cenário Neutro:</span>
-                <span style="font-size: 13px; color: var(--caoa-slate);">Compass, Creta, Corolla Cross, T-Cross, Tracker (Equilíbrio de volume)</span>
+                <span style="width: 13px; height: 13px; border-radius: 50%; background: var(--caoa-blue); flex-shrink: 0;"></span>
+                <span style="font-size: 13.5px; font-weight: 800; color: var(--caoa-navy);">Cenário Neutro:</span>
+                <span style="font-size: 13px; color: var(--caoa-slate); font-weight: 500;">Compass, Creta, Corolla Cross, T-Cross, Tracker (Equilíbrio de volume)</span>
               </div>
               <div style="display: flex; align-items: center; gap: 10px;">
-                <span style="width: 12px; height: 12px; border-radius: 50%; background: var(--caoa-red);"></span>
-                <span style="font-size: 13px; font-weight: 700; color: var(--caoa-navy);">Atenção:</span>
-                <span style="font-size: 13px; color: var(--caoa-slate);">Montana, Duster, Virtus, Hilux, Ranger (Monitorar giro e preço)</span>
+                <span style="width: 13px; height: 13px; border-radius: 50%; background: var(--caoa-red); flex-shrink: 0;"></span>
+                <span style="font-size: 13.5px; font-weight: 800; color: var(--caoa-navy);">Atenção:</span>
+                <span style="font-size: 13px; color: var(--caoa-slate); font-weight: 500;">Montana, Duster, Virtus, Hilux, Ranger (Monitorar giro e preço)</span>
               </div>
             </div>
           </div>
@@ -1718,12 +1734,12 @@
       </div>
 
       <footer class="slide-footer">
-        <span class="footer-left">CAOA Seminovos • Matriz de Atratividade de Portfólio</span>
+        <span class="footer-left">CAOA Seminovos • Matriz de Dispersão e Rentabilidade MY24-26</span>
         <span class="slide-counter">14 / 15</span>
       </footer>
     </section>
 
-        <!-- ==========================================
+                <!-- ==========================================
          SLIDE 15: PRINCIPAIS DESFECHOS E CURIOSIDADES - A SUPREMACIA TIGGO
          ========================================== -->
     <section class="slide" id="slide-15">
@@ -1733,107 +1749,122 @@
           <h2 class="slide-title">A SUPREMACIA TIGGO & CONCLUSÕES EXECUTIVAS</h2>
           <p class="slide-subtitle">Como o Tiggo 7 e o Tiggo 5x transformaram-se nos maiores geradores de lucro, liquidez e desejo do consumidor</p>
         </div>
-        <div class="header-right">
+        <div class="header-right" style="gap: 14px;">
+          <button class="header-action-btn" onclick="Presentation.downloadPDFReport()" title="Exportar Relatório Gerencial Completo em PDF">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span>Relatório PDF</span>
+          </button>
           <div class="header-badge" style="border-color: rgba(100, 194, 149, 0.5);"><span class="badge-dot"></span> Outubro 2026</div>
           <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
         </div>
       </header>
 
       <div class="slide-body">
-        <!-- VIP Crown Spotlight on Tiggo 7 & Tiggo 5x -->
+        <!-- VIP Crown Spotlight on Tiggo 7 & Tiggo 5x (ZERO KM MODELS) -->
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-          <!-- Tiggo 7 Crown Card -->
-          <div class="card" style="background: linear-gradient(135deg, #1D184B 0%, #2A236C 100%); color: #FFFFFF; border-left: 6px solid var(--caoa-mint); padding: 20px 24px;">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
+          <!-- Tiggo 7 Crown Card (0KM) -->
+          <div class="card" style="background: linear-gradient(135deg, #1D184B 0%, #2A236C 100%); color: #FFFFFF; border-left: 6px solid var(--caoa-mint); padding: 18px 22px; box-shadow: 0 12px 35px rgba(29, 24, 75, 0.35);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
               <span style="background: rgba(100, 194, 149, 0.2); border: 1px solid rgba(100, 194, 149, 0.5); padding: 4px 12px; border-radius: var(--radius-full); font-size: 11.5px; font-weight: 800; color: #8FE3BA; text-transform: uppercase;">
-                👑 O SOBERANO ABSOLUTO DOS SUVs MÉDIOS
+                👑 O SOBERANO ABSOLUTO DOS SUVs MÉDIOS • ZERO KM
               </span>
-              <span style="font-size: 13px; font-weight: 700; color: var(--caoa-mint);">Top #1 em Margem</span>
+              <span style="font-size: 13.5px; font-weight: 800; color: var(--caoa-mint);">Top #1 em Margem</span>
             </div>
-            <div style="display: flex; align-items: baseline; gap: 16px; margin: 12px 0 6px 0;">
-              <h3 style="font-size: 32px; font-weight: 900; color: #FFFFFF;">Tiggo 7</h3>
-              <span style="font-size: 34px; font-weight: 900; color: var(--caoa-mint);">11,5% <span style="font-size: 16px; color: #D8DFE8; font-weight: 600;">Margem Bruta</span></span>
+            
+            <div style="display: flex; gap: 18px; align-items: center;">
+              <div style="position: relative; flex-shrink: 0;">
+                <img src="assets/tiggo7.jpg" alt="CAOA Chery Tiggo 7 Pro Sport 0KM" style="width: 220px; height: 135px; object-fit: cover; border-radius: 12px; border: 2px solid var(--caoa-mint); box-shadow: 0 8px 24px rgba(0,0,0,0.4);">
+                <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(18, 14, 51, 0.85); color: #8FE3BA; font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(100,194,149,0.5);">NOVO 0KM</span>
+              </div>
+              <div>
+                <div style="display: flex; align-items: baseline; gap: 10px;">
+                  <h3 style="font-size: 28px; font-weight: 900; color: #FFFFFF;">Tiggo 7</h3>
+                  <span style="font-size: 30px; font-weight: 900; color: var(--caoa-mint);">11,5%</span>
+                </div>
+                <div style="font-size: 12px; font-weight: 700; color: #8FE3BA; text-transform: uppercase; margin-bottom: 6px;">Margem Bruta Campeã • 13,4% das Trocas</div>
+                <p style="font-size: 12.5px; color: #E2E8F0; line-height: 1.45;">
+                  O <strong>Tiggo 7 é o fenômeno absoluto da CAOA Seminovos</strong>. Desbancou Compass e Corolla Cross, atraindo clientes com seu design imponente, acabamento premium e liquidez instantânea com a maior lucratividade por unidade.
+                </p>
+              </div>
             </div>
-            <p style="font-size: 13.5px; color: #E2E8F0; line-height: 1.5;">
-              O <strong>Tiggo 7 é o fenômeno definitivo da CAOA Seminovos</strong>. Desbancou ícones consolidados como Jeep Compass e Toyota Corolla Cross, atraindo o cliente mais exigente com seu pacote de tecnologia de ponta, acabamento premium e revenda imediata. Responde por <strong>13,4% de todas as trocas</strong> e entrega a maior lucratividade por unidade do portfólio.
-            </p>
           </div>
 
-          <!-- Tiggo 5x Crown Card -->
-          <div class="card" style="background: linear-gradient(135deg, #154578 0%, #1D5E9E 100%); color: #FFFFFF; border-left: 6px solid #8FE3BA; padding: 20px 24px;">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
+          <!-- Tiggo 5x Crown Card (0KM) -->
+          <div class="card" style="background: linear-gradient(135deg, #154578 0%, #1D5E9E 100%); color: #FFFFFF; border-left: 6px solid #8FE3BA; padding: 18px 22px; box-shadow: 0 12px 35px rgba(21, 69, 120, 0.35);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
               <span style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); padding: 4px 12px; border-radius: var(--radius-full); font-size: 11.5px; font-weight: 800; color: #FFFFFF; text-transform: uppercase;">
-                ⭐ O QUERIDINHO DO BRASIL & CAMPEÃO DE GIRO
+                ⭐ O QUERIDINHO DO BRASIL & CAMPEÃO DE GIRO • ZERO KM
               </span>
-              <span style="font-size: 13px; font-weight: 700; color: #8FE3BA;">Alta Liquidez</span>
+              <span style="font-size: 13.5px; font-weight: 800; color: #8FE3BA;">Giro Relâmpago</span>
             </div>
-            <div style="display: flex; align-items: baseline; gap: 16px; margin: 12px 0 6px 0;">
-              <h3 style="font-size: 32px; font-weight: 900; color: #FFFFFF;">Tiggo 5x</h3>
-              <span style="font-size: 34px; font-weight: 900; color: #8FE3BA;">9,8% <span style="font-size: 16px; color: #D8DFE8; font-weight: 600;">Margem Bruta</span></span>
+            
+            <div style="display: flex; gap: 18px; align-items: center;">
+              <div style="position: relative; flex-shrink: 0;">
+                <img src="assets/tiggo5x.jpg" alt="CAOA Chery Tiggo 5x Pro Sport 0KM" style="width: 220px; height: 135px; object-fit: cover; border-radius: 12px; border: 2px solid #8FE3BA; box-shadow: 0 8px 24px rgba(0,0,0,0.4);">
+                <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(18, 14, 51, 0.85); color: #8FE3BA; font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(143,227,186,0.5);">NOVO 0KM</span>
+              </div>
+              <div>
+                <div style="display: flex; align-items: baseline; gap: 10px;">
+                  <h3 style="font-size: 28px; font-weight: 900; color: #FFFFFF;">Tiggo 5x</h3>
+                  <span style="font-size: 30px; font-weight: 900; color: #8FE3BA;">9,8%</span>
+                </div>
+                <div style="font-size: 12px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 6px;">Margem Bruta (9,4% das Trocas)</div>
+                <p style="font-size: 12.5px; color: #E2E8F0; line-height: 1.45;">
+                  O <strong>Tiggo 5x é a máquina de rentabilidade e giro</strong>: permanência ultrarrápida no pátio, rentabilidade de 9,8% e atração irresistível sobre clientes de T-Cross, Tracker e Renegade, convertendo em capital imediato.
+                </p>
+              </div>
             </div>
-            <p style="font-size: 13.5px; color: #E2E8F0; line-height: 1.5;">
-              O <strong>Tiggo 5x entrega o equilíbrio que qualquer operação sonha</strong>: giro relâmpago no pátio e rentabilidade de quase dois dígitos (9,8%). Conquista clientes de VW T-Cross, Renegade e Tracker, transformando cada veículo captado em dinheiro em caixa rápido, com <strong>9,4% de participação nas trocas</strong> e fidelidade máxima.
-            </p>
           </div>
         </div>
 
         <!-- Central Summary Block -->
-        <div class="card" style="flex: 1; padding: 18px 24px; display: flex; flex-direction: column; justify-content: center; background: #FFFFFF; border: 1px solid var(--caoa-card-border);">
+        <div class="card" style="padding: 16px 22px; display: flex; flex-direction: column; justify-content: center; background: #FFFFFF; border: 1px solid var(--caoa-card-border);">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
-            <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 12px;">
               <span style="background: var(--caoa-navy); color: #FFFFFF; font-size: 12px; font-weight: 800; padding: 4px 12px; border-radius: var(--radius-full);">PILAR ESTRATÉGICO</span>
-              <h4 style="font-size: 18px; font-weight: 800; color: var(--caoa-navy);">A Conquista Definitiva de Mercado: De Onde Vêm Nossos Clientes?</h4>
+              <h4 style="font-size: 18.5px; font-weight: 900; color: var(--caoa-navy);">A Conquista Definitiva de Mercado: De Onde Vêm Nossos Clientes?</h4>
             </div>
-            <span style="font-size: 12px; font-weight: 700; color: var(--caoa-mint-dark);">+25,9% de Clientes Vindos de Jeep e VW</span>
+            <span style="font-size: 13.5px; font-weight: 800; color: var(--caoa-mint-dark);">+25,9% de Clientes Vindos de Jeep e VW!</span>
           </div>
-          <p style="font-size: 14px; color: var(--caoa-charcoal); line-height: 1.5;">
-            Os números comprovam: os clientes de seminovos estão abandonando marcas tradicionais para ingressar no universo de tecnologia e conforto da linha Tiggo. <strong>13,4% das trocas vieram de proprietários de Jeep</strong> e <strong>12,5% da Volkswagen</strong>, além de <strong>9,4% da Toyota</strong>.
+          <p style="font-size: 14px; color: var(--caoa-charcoal); line-height: 1.5; font-weight: 500;">
+            Os números comprovam: os clientes estão abandonando montadoras consagradas para ingressar no universo de tecnologia e conforto da linha Tiggo. <strong>13,4% das trocas vieram de donos de Jeep</strong> e <strong>12,5% da Volkswagen</strong>, além de <strong>9,4% da Toyota</strong>.
           </p>
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--caoa-card-border);">
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--caoa-card-border);">
             <div style="background: #F8FAFD; padding: 10px 14px; border-radius: 8px;">
-              <div style="font-size: 12px; font-weight: 700; color: var(--caoa-navy);">🚀 Eficiência de Giro Máxima</div>
-              <p style="font-size: 12px; color: var(--caoa-slate); margin-top: 2px;">Giro médio de 19 dias (17 dias mais rápido que o mercado) impulsionado pelo apetite insaciável pelos Tiggos.</p>
+              <div style="font-size: 13px; font-weight: 800; color: var(--caoa-navy);">🚀 Eficiência de Giro Máxima</div>
+              <p style="font-size: 12.5px; color: var(--caoa-slate); margin-top: 2px;">Giro médio de 19 dias (17 dias mais rápido que o mercado) impulsionado pelo apetite insaciável pelos Tiggos.</p>
             </div>
             <div style="background: #F8FAFD; padding: 10px 14px; border-radius: 8px;">
-              <div style="font-size: 12px; font-weight: 700; color: var(--caoa-navy);">🎯 Força de Trade In Recorde</div>
-              <p style="font-size: 12px; color: var(--caoa-slate); margin-top: 2px;">Taxa recorde de 43,31% de Trade In em novos em outubro, com mesas de avaliação ágeis e atrativas.</p>
+              <div style="font-size: 13px; font-weight: 800; color: var(--caoa-navy);">🎯 Força de Trade In Recorde</div>
+              <p style="font-size: 12.5px; color: var(--caoa-slate); margin-top: 2px;">Taxa recorde de 43,31% de Trade In em novos em outubro, com mesas de avaliação ágeis e atrativas.</p>
             </div>
-            <div style="background: rgba(100, 194, 149, 0.1); padding: 10px 14px; border-radius: 8px;">
-              <div style="font-size: 12px; font-weight: 700; color: var(--caoa-mint-dark);">🏆 Meta de 3.500 em Novembro</div>
-              <p style="font-size: 12px; color: var(--caoa-charcoal); margin-top: 2px;">Meta histórica de 3.500 unidades ancorada no portfólio mais desejado e rentável do Brasil.</p>
+            <div style="background: rgba(100, 194, 149, 0.12); padding: 10px 14px; border-radius: 8px;">
+              <div style="font-size: 13px; font-weight: 800; color: var(--caoa-mint-dark);">🏆 Meta de 3.500 em Novembro</div>
+              <p style="font-size: 12.5px; color: var(--caoa-charcoal); margin-top: 2px; font-weight: 600;">Meta histórica de 3.500 unidades ancorada nos veículos mais desejados e rentáveis do Brasil.</p>
             </div>
           </div>
         </div>
 
-        <!-- Executive Insights Strip -->
-        <div class="insights-strip">
-          <div class="insight-card mint-accent">
-            <div class="insight-header">
-              <span class="insight-title">👑 Supremacia Tiggo</span>
-              <span class="insight-pill">Rentabilidade</span>
+        <!-- Executive PDF Report Download Card -->
+        <div class="card pdf-report-card" style="background: linear-gradient(135deg, #0F0C2A 0%, #1D184B 50%, #154578 100%); color: #FFFFFF; border: 1.5px solid rgba(100, 194, 149, 0.45); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; border-radius: var(--radius-md); box-shadow: 0 12px 36px rgba(0,0,0,0.35);">
+          <div style="display: flex; align-items: center; gap: 18px;">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(100, 194, 149, 0.18); border: 1.5px solid var(--caoa-mint); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--caoa-mint)" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </div>
-            <p class="insight-text">
-              Tiggo 7 (11,5%) e Tiggo 5x (9,8%) são a <strong>joia da coroa da CAOA Seminovos</strong>, entregando rentabilidade até 40% superior aos SUVs da concorrência tradicional.
-            </p>
-          </div>
-          <div class="insight-card">
-            <div class="insight-header">
-              <span class="insight-title">🚙 Canibalização da Concorrência</span>
-              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">Conquista</span>
+            <div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <h4 style="font-size: 18px; font-weight: 900; color: #FFFFFF;">Relatório Executivo Consolidado</h4>
+                <span style="background: var(--caoa-mint); color: #1D184B; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: var(--radius-full); text-transform: uppercase;">Pronto para Download / Impressão</span>
+              </div>
+              <p style="font-size: 13px; color: #D8DFE8; margin-top: 3px;">
+                Apresentação completa formatada em PDF de alta resolução (16:9 Landscape / A4) com todos os 15 slides, dados de vendas, giro e a supremacia Tiggo.
+              </p>
             </div>
-            <p class="insight-text">
-              Mais de <strong>25% de todas as trocas vieram de proprietários de Jeep e VW</strong> seduzidos pelo design, acabamento e custo-benefício insuperável dos Tiggos.
-            </p>
           </div>
-          <div class="insight-card">
-            <div class="insight-header">
-              <span class="insight-title">🚀 Base Sólida para Novembro</span>
-              <span class="insight-pill" style="background: rgba(29, 24, 75, 0.08); color: var(--caoa-navy);">Meta 3.500</span>
-            </div>
-            <p class="insight-text">
-              Com o Tiggo 7 e o Tiggo 5x na liderança do showroom e a retenção interna de 17,4%, o caminho para atingir a <strong>meta de 3.500 unidades em novembro</strong> está pavimentado com excelência.
-            </p>
-          </div>
+          <button class="pdf-download-btn" onclick="Presentation.downloadPDFReport()" title="Gerar e Baixar Relatório em PDF">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Baixar Relatório PDF</span>
+          </button>
         </div>
       </div>
 
@@ -1855,125 +1886,456 @@
 
 </div><!-- /presentation-wrapper -->
 
-<!-- Floating Navigation Dock (Located in dedicated space below slide) -->
+<!-- iPhone Dynamic Island Glass Toolbar -->
 <nav class="nav-toolbar" id="nav-toolbar">
-  <button class="nav-btn" onclick="Presentation.prevSlide()" title="Slide Anterior (←)">
-    <span>◀</span> Anterior
+  <button class="nav-pill-btn" onclick="Presentation.prevSlide()" title="Slide Anterior (←)">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
   </button>
   
-  <div class="nav-counter" id="nav-counter">01 / 15</div>
-  
-  <div class="nav-progress-track">
-    <div class="nav-progress-fill" id="nav-progress-fill"></div>
+  <div class="nav-pill-counter" onclick="Presentation.toggleOverview()" title="Clique para ver todos os slides (O / Esc)">
+    <span class="counter-text"><span id="nav-counter">01</span><span class="counter-sep">/</span><span class="counter-total">15</span></span>
+    <div class="nav-progress-track">
+      <div class="nav-progress-fill" id="nav-progress-fill"></div>
+    </div>
   </div>
 
-  <button class="nav-btn primary" onclick="Presentation.nextSlide()" title="Próximo Slide (→)">
-    Próximo <span>▶</span>
+  <button class="nav-pill-btn primary" onclick="Presentation.nextSlide()" title="Próximo Slide (→)">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
   </button>
 
-  <div class="nav-divider"></div>
+  <div class="nav-pill-divider"></div>
 
-  <button class="nav-btn" onclick="Presentation.toggleOverview()" title="Visão Geral dos Slides (O / Esc)">
-    📑 Visão Geral
-  </button>
-  
-  <button class="nav-btn" id="btn-compare" onclick="Presentation.toggleCompareModal()" title="Comparar com Slide Original do PPTX (V)">
-    🔍 Slide Original
+  <button class="nav-pill-btn nav-pill-text-btn" onclick="Presentation.toggleOverview()" title="Todos os Slides da Apresentação (O / Esc)">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
+    <span>Slides</span>
   </button>
 
-  <button class="nav-btn" id="btn-autoplay" onclick="Presentation.toggleAutoPlay()" title="Apresentação Automática (P)">
-    ▶ Auto
+  <button class="nav-pill-btn nav-pill-text-btn" id="btn-laser" onclick="Presentation.toggleLaser()" title="Apontador Laser Interativo (L)">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3.5" fill="#FF3B30"/><circle cx="12" cy="12" r="8" stroke="#FF3B30" stroke-dasharray="2 2"/></svg>
+    <span>Laser</span>
   </button>
 
-  <button class="nav-btn" onclick="Presentation.toggleFullscreen()" title="Tela Cheia (F)">
-    ⛶ Tela Cheia
+  <button class="nav-pill-btn nav-pill-text-btn" id="btn-super-zoom" onclick="Presentation.toggleSuperZoom()" title="Super Zoom dos Dados e Gráficos (Z)">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+    <span>Zoom</span>
   </button>
 
-  <button class="nav-btn" onclick="Presentation.toggleToolbar()" title="Ocultar Barra (B)">
-    ✕ Ocultar
+  <button class="nav-pill-btn nav-pill-text-btn" onclick="Presentation.downloadPDFReport()" title="Baixar Relatório Executivo em PDF">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+    <span>PDF</span>
+  </button>
+
+  <button class="nav-pill-btn" onclick="Presentation.toggleFullscreen()" title="Tela Cheia (F)">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+  </button>
+
+  <button class="nav-pill-btn nav-pill-btn-hide" onclick="Presentation.toggleToolbar()" title="Ocultar Menu (B)">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
 </nav>
 
-<!-- Mini Floating Restore Button (Shown when toolbar is hidden) -->
-<button class="toolbar-show-btn" id="toolbar-show-btn" onclick="Presentation.toggleToolbar()" title="Exibir Barra de Controle (B)">
-  ▲ Controles
+<!-- Clean iPhone Glass Restore Pill (Shown when toolbar is collapsed) -->
+<button class="toolbar-restore-pill" id="toolbar-show-btn" onclick="Presentation.toggleToolbar()" title="Exibir Menu de Controles (B)">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+  <span>Controles</span>
 </button>
 
-<!-- Overview Thumbnails Modal -->
+<!-- Interactive Presenter Laser Pointer -->
+<div id="laser-pointer" class="laser-pointer"></div>
+
+<!-- Overview Thumbnails Modal (Showing ALL 15 SLIDES of THIS PRESENTATION) -->
 <div class="modal-overlay" id="overview-modal">
   <div class="modal-header">
-    <h2>Índice Geral de Slides (15 Slides)</h2>
+    <h2>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--caoa-mint)" stroke-width="2.5"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
+      Índice Geral de Slides da Apresentação (15 Slides)
+    </h2>
     <button class="modal-close-btn" onclick="Presentation.toggleOverview()">✕ Fechar (Esc)</button>
   </div>
   <div class="thumbnails-grid">
-    <div class="thumb-card" onclick="Presentation.goToSlide(1); Presentation.toggleOverview();">
-      <img src="assets/image1.png" class="thumb-preview" alt="Slide 1" style="object-fit: contain; background: #1D184B; padding: 15px;">
-      <div class="thumb-info"><span class="thumb-num">01</span><span class="thumb-title">Capa Abertura</span></div>
+    <!-- Slide 1 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(1); Presentation.toggleOverview();" data-slide="1">
+      <div class="thumb-preview-slide thumb-cover">
+        <div class="thumb-cover-header">
+          <img src="assets/logo-white.png" alt="CAOA Seminovos" class="thumb-logo">
+          <span class="thumb-badge-mint">OUTUBRO 2026</span>
+        </div>
+        <div class="thumb-cover-title">Resultados & Performance</div>
+        <div class="thumb-cover-subtitle">CAOA Seminovos Master</div>
+        <div class="thumb-mini-kpis">
+          <div class="mini-kpi"><span>2.505</span>Vendas</div>
+          <div class="mini-kpi"><span>19d</span>Giro</div>
+          <div class="mini-kpi"><span>43,3%</span>Trade In</div>
+          <div class="mini-kpi highlight"><span>3.500</span>Meta Nov</div>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">01</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Capa Executiva Master</span>
+          <span class="thumb-category">Abertura • CAOA Seminovos</span>
+        </div>
+      </div>
     </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(2); Presentation.toggleOverview();">
-      <img src="assets/image2.png" class="thumb-preview" alt="Slide 2">
-      <div class="thumb-info"><span class="thumb-num">02</span><span class="thumb-title">Volume de Vendas 2026</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(3); Presentation.toggleOverview();">
-      <img src="assets/image3.png" class="thumb-preview" alt="Slide 3">
-      <div class="thumb-info"><span class="thumb-num">03</span><span class="thumb-title">Giro de Estoque</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(4); Presentation.toggleOverview();">
-      <img src="assets/image5.png" class="thumb-preview" alt="Slide 4">
-      <div class="thumb-info"><span class="thumb-num">04</span><span class="thumb-title">Mesa de Avaliação Mensal</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(5); Presentation.toggleOverview();">
-      <img src="assets/image6.png" class="thumb-preview" alt="Slide 5">
-      <div class="thumb-info"><span class="thumb-num">05</span><span class="thumb-title">Mesa por Marca</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(6); Presentation.toggleOverview();">
-      <img src="assets/image7.png" class="thumb-preview" alt="Slide 6">
-      <div class="thumb-info"><span class="thumb-num">06</span><span class="thumb-title">Precificação FIPE</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(7); Presentation.toggleOverview();">
-      <img src="assets/image8.png" class="thumb-preview" alt="Slide 7">
-      <div class="thumb-info"><span class="thumb-num">07</span><span class="thumb-title">Vendas por Marca</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(8); Presentation.toggleOverview();">
-      <img src="assets/image9.png" class="thumb-preview" alt="Slide 8">
-      <div class="thumb-info"><span class="thumb-num">08</span><span class="thumb-title">Exclusiva Seminovos</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(9); Presentation.toggleOverview();">
-      <img src="assets/image10.png" class="thumb-preview" alt="Slide 9">
-      <div class="thumb-info"><span class="thumb-num">09</span><span class="thumb-title">Trade In CAOA Chery</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(10); Presentation.toggleOverview();">
-      <img src="assets/image11.png" class="thumb-preview" alt="Slide 10">
-      <div class="thumb-info"><span class="thumb-num">10</span><span class="thumb-title">Trade In CAOA Changan</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(11); Presentation.toggleOverview();">
-      <img src="assets/image12.png" class="thumb-preview" alt="Slide 11">
-      <div class="thumb-info"><span class="thumb-num">11</span><span class="thumb-title">Trade In Hyundai</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(12); Presentation.toggleOverview();">
-      <img src="assets/image13.png" class="thumb-preview" alt="Slide 12">
-      <div class="thumb-info"><span class="thumb-num">12</span><span class="thumb-title">Trade In Ford</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(13); Presentation.toggleOverview();">
-      <img src="assets/image14.png" class="thumb-preview" alt="Slide 13">
-      <div class="thumb-info"><span class="thumb-num">13</span><span class="thumb-title">Marcas na Troca</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(14); Presentation.toggleOverview();">
-      <img src="assets/image15.png" class="thumb-preview" alt="Slide 14">
-      <div class="thumb-info"><span class="thumb-num">14</span><span class="thumb-title">Matriz 40 Seminovos</span></div>
-    </div>
-    <div class="thumb-card" onclick="Presentation.goToSlide(15); Presentation.toggleOverview();">
-      <img src="assets/image16.png" class="thumb-preview" alt="Slide 15">
-      <div class="thumb-info"><span class="thumb-num">15</span><span class="thumb-title">Desfechos & Conclusões</span></div>
-    </div>
-  </div>
-</div>
 
-<!-- Original Slide Compare Modal -->
-<div class="compare-modal" id="compare-modal">
-  <button class="compare-close-btn" onclick="Presentation.toggleCompareModal()">✕ Fechar (V / Esc)</button>
-  <div class="compare-modal-content">
-    <img id="compare-modal-img" src="" class="compare-modal-img" alt="Slide Original PPTX">
+    <!-- Slide 2 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(2); Presentation.toggleOverview();" data-slide="2">
+      <div class="thumb-preview-slide">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat">Comercial</span>
+          <span class="thumb-slide-id">VOLUME 2026</span>
+        </div>
+        <div class="thumb-slide-heading">Volume de Vendas 2026</div>
+        <div class="thumb-kpi-row">
+          <div class="thumb-kpi-box"><strong>2.505</strong><span>Realizado</span></div>
+          <div class="thumb-kpi-box highlight"><strong>3.500</strong><span>Meta Nov (76%)</span></div>
+          <div class="thumb-kpi-box"><strong>22.840</strong><span>Acumulado</span></div>
+        </div>
+        <div class="thumb-mini-badge-row" style="margin-top: 4px;">
+          <span class="thumb-chip mint" style="font-size: 8px;">Novembro: Meta Projetada (3.500)</span>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">02</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Volume de Vendas 2026</span>
+          <span class="thumb-category">Comercial • Meta 3.500</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(3); Presentation.toggleOverview();" data-slide="3">
+      <div class="thumb-preview-slide">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat">Operação</span>
+          <span class="thumb-slide-id">GIRO DE ESTOQUE</span>
+        </div>
+        <div class="thumb-slide-heading">Giro de Estoque (Dias)</div>
+        <div class="thumb-kpi-row">
+          <div class="thumb-kpi-box highlight"><strong>19 Dias</strong><span>CAOA (-17d)</span></div>
+          <div class="thumb-kpi-box"><strong>36 Dias</strong><span>Mercado</span></div>
+          <div class="thumb-kpi-box"><strong>89,4%</strong><span>Eficiência</span></div>
+        </div>
+        <div class="thumb-mini-badge-row" style="margin-top: 4px;">
+          <span class="thumb-chip mint" style="font-size: 8px;">17 dias mais rápido que mercado</span>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">03</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Giro de Estoque</span>
+          <span class="thumb-category">Gestão de Pátio • 19 Dias</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(4); Presentation.toggleOverview();" data-slide="4">
+      <div class="thumb-preview-slide">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat">Trade In</span>
+          <span class="thumb-slide-id">MESA MENSAL</span>
+        </div>
+        <div class="thumb-slide-heading">Mesa de Avaliação Mensal</div>
+        <div class="thumb-kpi-row">
+          <div class="thumb-kpi-box highlight"><strong>43,31%</strong><span>Trade In Recorde</span></div>
+          <div class="thumb-kpi-box"><strong>6.000+</strong><span>Avaliações</span></div>
+        </div>
+        <div class="thumb-mini-badge-row" style="margin-top: 4px;">
+          <span class="thumb-chip mint" style="font-size: 8px;">Pico Histórico em Novos</span>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">04</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Mesa de Avaliação Mensal</span>
+          <span class="thumb-category">Trade In • Recorde 43,31%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(5); Presentation.toggleOverview();" data-slide="5">
+      <div class="thumb-preview-slide">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat">Trade In</span>
+          <span class="thumb-slide-id">POR MARCA</span>
+        </div>
+        <div class="thumb-slide-heading">Mesa de Avaliação por Marca</div>
+        <div class="thumb-brand-bars">
+          <div class="thumb-brand-row"><span>Chery</span><div class="bar-fill" style="width: 85%;"></div><span>22,8%</span></div>
+          <div class="thumb-brand-row"><span>Hyundai</span><div class="bar-fill" style="width: 75%;"></div><span>20,4%</span></div>
+          <div class="thumb-brand-row"><span>Ford</span><div class="bar-fill" style="width: 55%;"></div><span>14,8%</span></div>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">05</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Mesa por Marca</span>
+          <span class="thumb-category">Mix de Captação</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(6); Presentation.toggleOverview();" data-slide="6">
+      <div class="thumb-preview-slide">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat">Precificação</span>
+          <span class="thumb-slide-id">FIPE</span>
+        </div>
+        <div class="thumb-slide-heading">Precificação: Repasse vs Showroom</div>
+        <div class="thumb-kpi-row">
+          <div class="thumb-kpi-box"><strong>89,6%</strong><span>Compra FIPE</span></div>
+          <div class="thumb-kpi-box highlight"><strong>96,2%</strong><span>Venda FIPE</span></div>
+          <div class="thumb-kpi-box"><strong>+6,6%</strong><span>Spread Bruto</span></div>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">06</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Precificação FIPE</span>
+          <span class="thumb-category">Repasse vs Showroom</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(7); Presentation.toggleOverview();" data-slide="7">
+      <div class="thumb-preview-slide">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat">Comercial</span>
+          <span class="thumb-slide-id">POR MARCA</span>
+        </div>
+        <div class="thumb-slide-heading">Total de Vendas por Marca</div>
+        <div class="thumb-kpi-row">
+          <div class="thumb-kpi-box highlight"><strong>657 un</strong><span>Chery (Top 1)</span></div>
+          <div class="thumb-kpi-box"><strong>420 un</strong><span>Hyundai</span></div>
+          <div class="thumb-kpi-box"><strong>310 un</strong><span>Ford</span></div>
+        </div>
+        <div class="thumb-mini-badge-row" style="margin-top: 4px;">
+          <span class="thumb-chip" style="font-size: 8px;">Total: 2.505 un</span>
+          <span class="thumb-chip mint" style="font-size: 8px;">Margem: 9,4%</span>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">07</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Vendas por Marca</span>
+          <span class="thumb-category">Consolidado • Chery Líder</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(8); Presentation.toggleOverview();" data-slide="8">
+      <div class="thumb-preview-slide">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat">Rede</span>
+          <span class="thumb-slide-id">EXCLUSIVA</span>
+        </div>
+        <div class="thumb-slide-heading">Exclusiva Seminovos - Performance</div>
+        <div class="thumb-kpi-row">
+          <div class="thumb-kpi-box highlight"><strong>72%</strong><span>Varejo Lojas</span></div>
+          <div class="thumb-kpi-box"><strong>28%</strong><span>Digital / Web</span></div>
+        </div>
+        <div class="thumb-mini-badge-row" style="margin-top: 4px;">
+          <span class="thumb-chip mint" style="font-size: 8px;">Rede Dedicada</span>
+          <span class="thumb-chip" style="font-size: 8px;">Giro Ágil</span>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">08</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Exclusiva Seminovos</span>
+          <span class="thumb-category">Performance de Lojas</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(9); Presentation.toggleOverview();" data-slide="9">
+      <div class="thumb-preview-slide">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat">Trade In</span>
+          <span class="thumb-slide-id">CAOA CHERY</span>
+        </div>
+        <div class="thumb-slide-heading">Trade In CAOA Chery</div>
+        <div class="thumb-kpi-row">
+          <div class="thumb-kpi-box highlight"><strong>40,78%</strong><span>Penetração</span></div>
+          <div class="thumb-kpi-box"><strong>Tiggo 7 & 5x</strong><span>Destaques</span></div>
+        </div>
+        <div class="thumb-mini-badge-row" style="margin-top: 4px;">
+          <span class="thumb-chip mint" style="font-size: 8px;">Top Loja: Ibirapuera</span>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">09</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Trade In CAOA Chery</span>
+          <span class="thumb-category">Penetração 40,78%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 10 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(10); Presentation.toggleOverview();" data-slide="10">
+      <div class="thumb-preview-slide">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat">Trade In</span>
+          <span class="thumb-slide-id">CAOA CHANGAN</span>
+        </div>
+        <div class="thumb-slide-heading">Trade In CAOA Changan</div>
+        <div class="thumb-kpi-row">
+          <div class="thumb-kpi-box"><strong>Rede</strong><span>Changan</span></div>
+          <div class="thumb-kpi-box highlight"><strong>Crescimento</strong><span>Captação</span></div>
+        </div>
+        <div class="thumb-mini-badge-row" style="margin-top: 4px;">
+          <span class="thumb-chip" style="font-size: 8px;">Expansão</span>
+          <span class="thumb-chip mint" style="font-size: 8px;">Conversão</span>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">10</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Trade In CAOA Changan</span>
+          <span class="thumb-category">Rankings de Trade In</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 11 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(11); Presentation.toggleOverview();" data-slide="11">
+      <div class="thumb-preview-slide">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat">Trade In</span>
+          <span class="thumb-slide-id">HYUNDAI</span>
+        </div>
+        <div class="thumb-slide-heading">Trade In Hyundai</div>
+        <div class="thumb-kpi-row">
+          <div class="thumb-kpi-box highlight"><strong>44,79%</strong><span>Penetração</span></div>
+          <div class="thumb-kpi-box"><strong>HB20 & Creta</strong><span>Mix Forte</span></div>
+        </div>
+        <div class="thumb-mini-badge-row" style="margin-top: 4px;">
+          <span class="thumb-chip mint" style="font-size: 8px;">Top Loja: Morumbi</span>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">11</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Trade In Hyundai</span>
+          <span class="thumb-category">Penetração 44,79%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 12 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(12); Presentation.toggleOverview();" data-slide="12">
+      <div class="thumb-preview-slide">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat">Trade In</span>
+          <span class="thumb-slide-id">FORD</span>
+        </div>
+        <div class="thumb-slide-heading">Trade In Ford</div>
+        <div class="thumb-kpi-row">
+          <div class="thumb-kpi-box highlight"><strong>41,20%</strong><span>Penetração</span></div>
+          <div class="thumb-kpi-box"><strong>Territory / Ranger</strong><span>Mix</span></div>
+        </div>
+        <div class="thumb-mini-badge-row" style="margin-top: 4px;">
+          <span class="thumb-chip mint" style="font-size: 8px;">Top Loja: Alphaville</span>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">12</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Trade In Ford</span>
+          <span class="thumb-category">Penetração 41,20%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 13 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(13); Presentation.toggleOverview();" data-slide="13">
+      <div class="thumb-preview-slide">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat">Mercado</span>
+          <span class="thumb-slide-id">CONQUISTA</span>
+        </div>
+        <div class="thumb-slide-heading">Marcas Consideradas na Troca</div>
+        <div class="thumb-brand-bars">
+          <div class="thumb-brand-row"><span>Jeep</span><div class="bar-fill" style="width: 80%;"></div><span>13,4%</span></div>
+          <div class="thumb-brand-row"><span>VW</span><div class="bar-fill" style="width: 75%;"></div><span>12,5%</span></div>
+          <div class="thumb-brand-row"><span>Toyota</span><div class="bar-fill" style="width: 58%;"></div><span>9,4%</span></div>
+        </div>
+        <div class="thumb-mini-badge-row" style="margin-top: 4px;">
+          <span class="thumb-chip mint" style="font-size: 8px;">+25,9% Jeep + VW</span>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">13</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Marcas na Troca</span>
+          <span class="thumb-category">De Onde Vêm Nossos Clientes</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 14 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(14); Presentation.toggleOverview();" data-slide="14">
+      <div class="thumb-preview-slide" style="background: linear-gradient(135deg, #18143F 0%, #251D5A 100%);">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat" style="background: rgba(100,194,149,0.25); color: #8FE3BA;">Portfólio</span>
+          <span class="thumb-slide-id" style="color: #FFFFFF;">MY24-26</span>
+        </div>
+        <div class="thumb-slide-heading" style="color: #FFFFFF;">Como Estão os 40 Seminovos</div>
+        <div class="thumb-tiggo-split">
+          <div class="thumb-tiggo-mini">
+            <img src="assets/tiggo7.jpg" alt="Tiggo 7">
+            <div class="tg-info"><strong>Tiggo 7</strong><span class="tg-margin">11,5%</span></div>
+          </div>
+          <div class="thumb-tiggo-mini">
+            <img src="assets/tiggo5x.jpg" alt="Tiggo 5x">
+            <div class="tg-info"><strong>Tiggo 5x</strong><span class="tg-margin">9,8%</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">14</span>
+        <div class="thumb-text">
+          <span class="thumb-title">Matriz 40 Seminovos</span>
+          <span class="thumb-category">Tiggo 7 & 5x Destaques de Margem</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 15 -->
+    <div class="thumb-card" onclick="Presentation.goToSlide(15); Presentation.toggleOverview();" data-slide="15">
+      <div class="thumb-preview-slide" style="background: linear-gradient(135deg, #1D184B 0%, #154578 100%);">
+        <div class="thumb-slide-top">
+          <span class="thumb-pill-cat" style="background: var(--caoa-mint); color: #1D184B; font-weight: 800;">Estratégia</span>
+          <span class="thumb-slide-id" style="color: var(--caoa-mint);">👑 SUPREMACIA</span>
+        </div>
+        <div class="thumb-slide-heading" style="color: #FFFFFF;">A Supremacia Tiggo & Conclusõesões</div>
+        <div class="thumb-tiggo-split">
+          <div class="thumb-tiggo-mini highlight">
+            <img src="assets/tiggo7.jpg" alt="Tiggo 7">
+            <div class="tg-info"><strong style="color: #FFFFFF;">👑 Tiggo 7</strong><span class="tg-margin" style="color: var(--caoa-mint);">11,5%</span></div>
+          </div>
+          <div class="thumb-tiggo-mini highlight">
+            <img src="assets/tiggo5x.jpg" alt="Tiggo 5x">
+            <div class="tg-info"><strong style="color: #FFFFFF;">⭐ Tiggo 5x</strong><span class="tg-margin" style="color: #8FE3BA;">9,8%</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="thumb-info">
+        <span class="thumb-num">15</span>
+        <div class="thumb-text">
+          <span class="thumb-title">A Supremacia Tiggo & Conclusõesões</span>
+          <span class="thumb-category">Desfechos • Meta 3.500</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

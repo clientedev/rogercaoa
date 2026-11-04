@@ -10,3 +10,5 @@ caoa_theme.css
 *.pptx
 .vercel
 node_modules
+
+.vercel

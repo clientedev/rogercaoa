@@ -9,26 +9,9 @@ const Presentation = (function () {
   let autoPlayInterval = null;
   let autoPlayActive = false;
   let isToolbarVisible = true;
+  let isLaserActive = false;
   const charts = {};
 
-  // Slide Images Map for Comparison Modal
-  const slideOriginalImages = {
-    1: 'assets/image1.png',
-    2: 'assets/image2.png',
-    3: 'assets/image3.png',
-    4: 'assets/image5.png',
-    5: 'assets/image6.png',
-    6: 'assets/image7.png',
-    7: 'assets/image8.png',
-    8: 'assets/image9.png',
-    9: 'assets/image10.png',
-    10: 'assets/image11.png',
-    11: 'assets/image12.png',
-    12: 'assets/image13.png',
-    13: 'assets/image14.png',
-    14: 'assets/image15.png',
-    15: 'assets/image16.png'
-  };
 
   function init() {
     setupResponsiveScaling();
@@ -77,6 +60,70 @@ const Presentation = (function () {
   }
 
   // 16:9 Mathematical Responsive Scaling - Reserves space so toolbar NEVER covers content
+    // ==========================================
+  // PRESENTER LASER POINTER ENGINE
+  // ==========================================
+  let laserX = 0, laserY = 0, laserTicking = false;
+
+  function toggleLaser() {
+    isLaserActive = !isLaserActive;
+    const btn = document.getElementById('btn-laser');
+    const laser = document.getElementById('laser-pointer');
+    
+    if (isLaserActive) {
+      document.body.classList.add('laser-active');
+      if (btn) btn.classList.add('laser-active-btn');
+      window.addEventListener('mousemove', onLaserMouseMove);
+      window.addEventListener('click', onLaserClick);
+    } else {
+      document.body.classList.remove('laser-active');
+      if (btn) btn.classList.remove('laser-active-btn');
+      window.removeEventListener('mousemove', onLaserMouseMove);
+      window.removeEventListener('click', onLaserClick);
+    }
+  }
+
+  function onLaserMouseMove(e) {
+    laserX = e.clientX;
+    laserY = e.clientY;
+    if (!laserTicking) {
+      requestAnimationFrame(() => {
+        const laser = document.getElementById('laser-pointer');
+        if (laser) {
+          laser.style.left = laserX + 'px';
+          laser.style.top = laserY + 'px';
+        }
+        laserTicking = false;
+      });
+      laserTicking = true;
+    }
+  }
+
+  function onLaserClick(e) {
+    if (!isLaserActive) return;
+    const ripple = document.createElement('div');
+    ripple.className = 'laser-ripple';
+    ripple.style.left = e.clientX + 'px';
+    ripple.style.top = e.clientY + 'px';
+    document.body.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 550);
+  }
+
+  // ==========================================
+  // HIGH-FIDELITY PDF REPORT GENERATION
+  // ==========================================
+  function downloadPDFReport() {
+    // Render all charts so none are blank in the print layout
+    for (let i = 1; i <= totalSlides; i++) {
+      renderChartForSlide(i);
+    }
+
+    // Small delay to allow any pending chart render to finish
+    setTimeout(() => {
+      window.print();
+    }, 250);
+  }
+
   function setupResponsiveScaling() {
     const stage = document.getElementById('slide-stage');
     if (!stage) return;
@@ -161,15 +208,15 @@ const Presentation = (function () {
         case 'G':
           toggleOverview();
           break;
-        case 'v':
-        case 'V':
-          toggleCompareModal();
-          break;
         case 'b':
         case 'B':
         case 't':
         case 'T':
           toggleToolbar();
+          break;
+        case 'z':
+        case 'Z':
+          toggleSuperZoom();
           break;
         case 'Escape':
           closeModals();
@@ -216,6 +263,19 @@ const Presentation = (function () {
     }
     if (window._recalculateScale) {
       window._recalculateScale();
+    }
+  }
+
+  function toggleSuperZoom() {
+    const isSuper = document.body.classList.toggle('super-zoom');
+    const btn = document.getElementById('btn-super-zoom');
+    if (btn) {
+      btn.innerHTML = isSuper ? '🔍 Zoom Max: ON' : '🔍 Zoom Max';
+      if (isSuper) {
+        btn.classList.add('primary');
+      } else {
+        btn.classList.remove('primary');
+      }
     }
   }
 
@@ -297,24 +357,26 @@ const Presentation = (function () {
   function toggleOverview() {
     const modal = document.getElementById('overview-modal');
     if (modal) {
+      const isOpening = !modal.classList.contains('active');
       modal.classList.toggle('active');
-    }
-  }
-
-  function toggleCompareModal() {
-    const modal = document.getElementById('compare-modal');
-    const img = document.getElementById('compare-modal-img');
-    if (modal && img) {
-      img.src = slideOriginalImages[currentSlide] || 'assets/image1.png';
-      modal.classList.toggle('active');
+      if (isOpening) {
+        // Highlight active slide thumbnail
+        document.querySelectorAll('.thumb-card').forEach(card => {
+          const slideNum = parseInt(card.getAttribute('data-slide'));
+          if (slideNum === currentSlide) {
+            card.classList.add('active-thumb');
+            card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          } else {
+            card.classList.remove('active-thumb');
+          }
+        });
+      }
     }
   }
 
   function closeModals() {
     const overview = document.getElementById('overview-modal');
-    const compare = document.getElementById('compare-modal');
     if (overview) overview.classList.remove('active');
-    if (compare) compare.classList.remove('active');
   }
 
   // Chart Initializers with Luxury CAOA Seminovos Visual Palette & Custom Tooltips
@@ -495,8 +557,20 @@ const Presentation = (function () {
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
           plugins: {
-            legend: { position: 'top', labels: { boxWidth: 12, font: { size: 11, weight: 600 } } }
+            legend: { position: 'top', labels: { boxWidth: 14, font: { size: 13, weight: 700 } } },
+            tooltip: {
+              callbacks: {
+                title: (items) => `📅 Mês: ${items[0].label} 2026`,
+                label: (ctx) => {
+                  if (ctx.dataset.type === 'line') {
+                    return ` 🎯 Taxa de Trade In: ${ctx.raw}% ${ctx.dataIndex === 9 ? '👑 RECORDE HISTÓRICO' : ''}`;
+                  }
+                  return ` 📊 ${ctx.dataset.label}: ${ctx.raw.toLocaleString('pt-BR')} unidades`;
+                }
+              }
+            }
           },
           scales: {
             y: { grid: { color: '#E2E8F0' }, title: { display: true, text: 'Volume' } },
@@ -546,8 +620,20 @@ const Presentation = (function () {
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
           plugins: {
-            legend: { position: 'top', labels: { boxWidth: 12, font: { size: 11, weight: 600 } } }
+            legend: { position: 'top', labels: { boxWidth: 14, font: { size: 13, weight: 700 } } },
+            tooltip: {
+              callbacks: {
+                title: (items) => `📅 Mês: ${items[0].label} 2026`,
+                label: (ctx) => {
+                  if (ctx.dataset.type === 'line') {
+                    return ` 📈 Conversão: ${ctx.raw}%`;
+                  }
+                  return ` 🔍 ${ctx.dataset.label}: ${ctx.raw.toLocaleString('pt-BR')} avaliações`;
+                }
+              }
+            }
           },
           scales: {
             y: { grid: { color: '#E2E8F0' }, title: { display: true, text: 'Avaliações' } },
@@ -641,10 +727,14 @@ const Presentation = (function () {
           legend: { position: 'bottom', labels: { font: { weight: 700, size: 13 }, padding: 16 } },
           tooltip: {
             callbacks: {
+              title: (items) => `🚗 ${items[0].label}`,
               label: (ctx) => {
                 const total = 2505;
                 const pct = ((ctx.raw / total) * 100).toFixed(1);
-                return ` ${ctx.label}: ${ctx.raw} unid. (${pct}%)`;
+                return [
+                  ` Volume Vendido: ${ctx.raw.toLocaleString('pt-BR')} unidades`,
+                  ` Participação de Vendas: ${pct}% do Total da Rede (2.505 un)`
+                ];
               }
             }
           }
@@ -691,7 +781,11 @@ const Presentation = (function () {
           legend: { display: false },
           tooltip: {
             callbacks: {
-              label: (ctx) => ` ${ctx.raw}% das trocas captadas`
+              title: (items) => `🚙 Marca Conquistada: ${items[0].label}`,
+              label: (ctx) => [
+                ` Participação nas Trocas: ${ctx.raw}%`,
+                ctx.dataIndex < 2 ? '🔥 Principal Concorrente Canibalizada pelos Tiggos' : 'Captação Ativa de Mercado'
+              ]
             }
           }
         },
@@ -781,13 +875,23 @@ const Presentation = (function () {
         plugins: {
           legend: { position: 'top', labels: { font: { weight: 700, size: 12 }, padding: 14 } },
           tooltip: {
-            backgroundColor: '#1D184B',
-            padding: 12,
-            cornerRadius: 10,
             callbacks: {
+              title: (items) => items[0].raw.name,
               label: (ctx) => {
                 const item = ctx.raw;
-                return ` ${item.name}: Margem ${item.y}% | Mercado ${item.x}%`;
+                if (item.type === 'tiggo-star') {
+                  return [
+                    `⭐ RENTABILIDADE SOBERANA: ${item.y}% de Margem Bruta`,
+                    `🚀 Penetração de Mercado: ${item.x}%`,
+                    `👑 O Modelo Mais Desejado e Rentável da CAOA Seminovos (0KM)`
+                  ];
+                }
+                const cat = item.type === 'ideal' ? 'Cenário Ideal (Alto Giro e Margem)' : item.type === 'neutral' ? 'Cenário Neutro (Equilíbrio de Volume)' : 'Atenção Operacional (Monitorar Precificação)';
+                return [
+                  `Margem Bruta: ${item.y}%`,
+                  `Penetração de Mercado: ${item.x}%`,
+                  `Classificação: ${cat}`
+                ];
               }
             }
           }
@@ -821,6 +925,9 @@ const Presentation = (function () {
     toggleOverview,
     toggleCompareModal,
     toggleToolbar,
+    toggleSuperZoom,
+    toggleLaser,
+    downloadPDFReport,
     closeModals
   };
 })();
