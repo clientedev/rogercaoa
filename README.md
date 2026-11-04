@@ -1,23 +1,22 @@
-# CAOA Seminovos • Apresentação Executiva 16:9 (Outubro 2026)
+# Roger CAOA Seminovos — Apresentação Executiva de Resultados (Outubro 2026)
 
-Apresentação corporativa padronizada em formato **16:9**, desenvolvida em HTML5, CSS3 e JavaScript com identidade visual da **CAOA Seminovos** (`https://caoaseminovos.com.br/`).
+Apresentação executiva institucional em HTML padronizada em formato **16:9** baseada no relatório gerencial oficial da **CAOA Seminovos**, estritamente alinhada com a identidade visual da marca ([caoaseminovos.com.br](https://caoaseminovos.com.br/)).
 
-## 🚀 Recursos
-- **Proporção Estrita 16:9**: Redimensionamento matemático responsivo (`transform: scale()`) para qualquer tela, projetor ou TV sem barras de rolagem ou distorção.
-- **Identidade Visual Oficial**: Paleta Deep Navy (`#1D184B`), Classic Blue (`#154578`) e Mint Green (`#64C295`), logos oficiais transparentes em alta definição.
-- **Gráficos Interativos**: Gráficos modernos via Chart.js com gradientes, tooltips dinâmicos e animações.
-- **Hover Zoom nos Cards**: Efeito dinâmico de elevação e ampliação ao passar o mouse sobre cards, KPIs e tabelas.
-- **QR Code Integrado**: Acompanhamento sincronizado via smartphone na capa executiva.
-- **Versão Mobile Totalmente Responsiva**: Ajuste fluido para dispositivos móveis e tablets com toque e navegação nativa.
-- **Supremacia Tiggo**: Destaque e análise de rentabilidade superior dos modelos **Tiggo 7 (11,5% de margem)** e **Tiggo 5x (9,8% de margem)**.
-- **Ferramenta de Comparação**: Tecla `V` para inspecionar e auditar os slides originais do PowerPoint.
+## 🚀 Principais Recursos
+- **Formato 16:9 Nativo:** Escala matemática adaptativa para projetores, monitores e notebooks.
+- **Menu Minimalista de Vidro (Apple Liquid Glass):** Barra flutuante translúcida ultracompacta (`38px`).
+- **Apontador Laser Interativo (`L`):** Cursor com feixe laser de alta potência 100% visível em fundos brancos e escuros.
+- **Gráficos Interativos (Chart.js):** Tooltips executivos escuros com borda mint, dados de atingimento e feedback ao clicar.
+- **Tiggos ZERO KM:** Fotos oficiais em alta definição dos novos **Tiggo 7 Pro Sport 0KM** (margem 11,5%) e **Tiggo 5x Pro Sport 0KM** (margem 9,8%).
+- **Relatório PDF Executivo:** Botão para download direto do arquivo PDF oficial landscape (16:9 / A4).
+- **Capa Minimalista e QR Code:** Acompanhamento sincronizado via smartphone com QR code integrado.
+- **Super Zoom (`Z`):** Ampliação dinâmica de cards e linhas de dados para leitura à distância.
 
 ## ⌨️ Atalhos de Teclado
-- `→` / `Espaço`: Próximo slide
-- `←`: Slide anterior
-- `F`: Modo Tela Cheia
-- `O` ou `Esc`: Visão geral dos 15 slides (Grid de Miniaturas)
-- `V`: Visualizar slide original do PPTX
-- `P`: Apresentação automática (Auto-play a cada 7s)
-- `B`: Ocultar / Exibir barra de controle inferior
-
+- `→` / `Espaço`: Avançar slide
+- `←`: Voltar slide
+- `L`: Ligar / Desligar Apontador Laser
+- `Z`: Alternar Modo Super Zoom
+- `O` / `Esc`: Ver Índice Geral de Slides
+- `F`: Alternar Tela Cheia
+- `B`: Ocultar / Mostrar Menu Flutuante

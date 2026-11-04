@@ -1836,7 +1836,7 @@ body.super-zoom .data-table tbody tr:hover .badge-pill {
   z-index: 999999;
   transform: translate(-50%, -50%);
   transition: opacity 0.15s ease;
-  mix-blend-mode: screen;
+  mix-blend-mode: normal !important;
   display: none;
 }
 
@@ -2001,4 +2001,225 @@ body.laser-active canvas {
   .pdf-download-btn {
     display: none !important;
   }
+}
+
+
+
+/* ==========================================================================
+   ULTRA-VISIBLE PRESENTER LASER POINTER (100% VISIBLE ON WHITE BACKGROUNDS)
+   ========================================================================== */
+.laser-pointer {
+  position: fixed !important;
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 50% !important;
+  
+  /* Solid Laser Core: Pure White Pinpoint Center + Intense Ruby Red */
+  background: radial-gradient(circle, #FFFFFF 0%, #FFFFFF 30%, #FF0033 65%, #CC0029 100%) !important;
+  
+  /* Dark perimeter rim for extreme contrast on pure white slides and tables */
+  border: 1.5px solid rgba(0, 0, 0, 0.65) !important;
+  
+  /* High-Power Laser Glows */
+  box-shadow: 0 0 5px #FFFFFF,
+              0 0 12px #FF0033,
+              0 0 25px #FF002B,
+              0 0 45px rgba(255, 0, 50, 0.95),
+              0 0 75px rgba(255, 0, 50, 0.6) !important;
+  
+  pointer-events: none !important;
+  z-index: 2147483647 !important;
+  transform: translate(-50%, -50%) !important;
+  mix-blend-mode: normal !important;
+  opacity: 1 !important;
+  display: none;
+}
+
+body.laser-active .laser-pointer {
+  display: block !important;
+}
+
+body.laser-active,
+body.laser-active #slide-stage,
+body.laser-active .slide,
+body.laser-active .card,
+body.laser-active table,
+body.laser-active tbody tr,
+body.laser-active canvas {
+  cursor: none !important;
+}
+
+body.laser-active .nav-toolbar,
+body.laser-active .nav-toolbar * {
+  cursor: pointer !important;
+}
+
+.laser-ripple {
+  position: fixed !important;
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 50% !important;
+  border: 2.5px solid #FF0033 !important;
+  box-shadow: 0 0 20px #FF0033, inset 0 0 10px #FF0033 !important;
+  pointer-events: none !important;
+  z-index: 2147483646 !important;
+  transform: translate(-50%, -50%) scale(1) !important;
+  animation: laserPulsePing 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+@keyframes laserPulsePing {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(5.5); opacity: 0; }
+}
+
+
+
+/* ==========================================================================
+   ENLARGED HIGH-VISIBILITY TABLE & ROW DATA ("INFOS EM LINHA MAIORES")
+   ========================================================================== */
+.data-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  text-align: left !important;
+  font-size: 18.5px !important;
+  font-variant-numeric: tabular-nums !important;
+}
+
+.data-table th {
+  background-color: #1D184B !important;
+  color: #FFFFFF !important;
+  font-family: var(--font-display) !important;
+  font-weight: 800 !important;
+  font-size: 17.5px !important;
+  letter-spacing: 0.8px !important;
+  padding: 13px 18px !important;
+  text-transform: uppercase !important;
+  border-bottom: 3px solid var(--caoa-mint) !important;
+}
+
+.data-table th:first-child {
+  border-top-left-radius: 8px !important;
+}
+
+.data-table th:last-child {
+  border-top-right-radius: 8px !important;
+}
+
+.data-table td {
+  padding: 12px 18px !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+  color: #120E33 !important;
+  font-size: 18.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+}
+
+.data-table td strong {
+  font-size: 20.5px !important;
+  font-weight: 900 !important;
+  color: #1D184B !important;
+}
+
+.data-table tr.total-row td {
+  background-color: #EEF4FA !important;
+  font-weight: 900 !important;
+  color: #1D184B !important;
+  border-top: 3px solid #1D184B !important;
+  font-size: 21px !important;
+  padding: 14px 18px !important;
+}
+
+.data-table tr.highlight-row td {
+  background-color: rgba(100, 194, 149, 0.16) !important;
+  font-weight: 900 !important;
+  color: #1D184B !important;
+  font-size: 19.5px !important;
+}
+
+.badge-pill {
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  padding: 4px 12px !important;
+  border-radius: var(--radius-full) !important;
+  letter-spacing: 0.4px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+/* Hover Row Amplification */
+tbody tr {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.18s ease !important;
+  will-change: transform, box-shadow;
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  transform: scale(1.045) translateZ(0) !important;
+  background-color: #FFFFFF !important;
+  box-shadow: 0 14px 35px rgba(29, 24, 75, 0.22), 0 0 0 2.5px var(--caoa-mint) !important;
+  position: relative !important;
+  z-index: 50 !important;
+  border-radius: 6px !important;
+}
+
+tbody tr:hover td {
+  font-size: 21px !important;
+  font-weight: 900 !important;
+  color: #1D184B !important;
+  background-color: #FFFFFF !important;
+}
+
+tbody tr:hover td strong {
+  font-size: 23px !important;
+  color: var(--caoa-mint-dark) !important;
+}
+
+/* Super Zoom Mode */
+body.super-zoom tbody tr:hover td {
+  font-size: 23.5px !important;
+  font-weight: 900 !important;
+}
+
+body.super-zoom tbody tr:hover td strong {
+  font-size: 25.5px !important;
+}
+
+/* Interactive Chart Click Highlight Toast */
+.chart-interactive-chip {
+  position: fixed;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px) scale(0.92);
+  background: rgba(18, 14, 51, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1.5px solid var(--caoa-mint);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45), 0 0 20px rgba(100, 194, 149, 0.35);
+  color: #FFFFFF;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-main);
+  font-size: 14.5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1500;
+}
+
+.chart-interactive-chip.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+
+.chart-interactive-chip strong {
+  color: var(--caoa-mint);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 15px;
 }

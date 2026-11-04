@@ -113,15 +113,34 @@ const Presentation = (function () {
   // HIGH-FIDELITY PDF REPORT GENERATION
   // ==========================================
   function downloadPDFReport() {
-    // Render all charts so none are blank in the print layout
-    for (let i = 1; i <= totalSlides; i++) {
-      renderChartForSlide(i);
-    }
-
-    // Small delay to allow any pending chart render to finish
+    // Direct download of the real executive PDF report
+    const link = document.createElement('a');
+    link.href = 'assets/Relatorio_Executivo_CAOA_Seminovos_Outubro_2026.pdf';
+    link.download = 'Relatorio_Executivo_CAOA_Seminovos_Outubro_2026.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
     setTimeout(() => {
-      window.print();
-    }, 250);
+      link.remove();
+    }, 150);
+  }
+
+  
+  // Interactive Chart Click Feedback Engine
+  function showChartInsight(title, text) {
+    let chip = document.getElementById('chart-interactive-chip');
+    if (!chip) {
+      chip = document.createElement('div');
+      chip.id = 'chart-interactive-chip';
+      chip.className = 'chart-interactive-chip';
+      document.body.appendChild(chip);
+    }
+    chip.innerHTML = `<strong>${title}</strong> <span>${text}</span>`;
+    chip.classList.add('visible');
+    clearTimeout(window._chipTimeout);
+    window._chipTimeout = setTimeout(() => {
+      chip.classList.remove('visible');
+    }, 3800);
   }
 
   function setupResponsiveScaling() {
