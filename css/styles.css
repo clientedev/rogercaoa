@@ -460,8 +460,8 @@ html, body {
 .data-table tbody tr:hover td {
   background-color: #FFFFFF !important;
   color: var(--caoa-navy) !important;
-  font-weight: 700 !important;
-  font-size: 14.5px !important;
+  font-weight: 800 !important;
+  font-size: 21px !important;
 }
 
 .data-table tbody tr:hover td:first-child {
@@ -802,8 +802,8 @@ body.super-zoom .data-table tbody tr:hover .badge-pill {
 .data-table tbody tr:hover td {
   background-color: #FFFFFF !important;
   color: var(--caoa-navy) !important;
-  font-weight: 700 !important;
-  font-size: 14.5px !important;
+  font-weight: 800 !important;
+  font-size: 21px !important;
 }
 
 .data-table tbody tr:hover td:first-child {
@@ -1824,18 +1824,19 @@ body.super-zoom .data-table tbody tr:hover .badge-pill {
    ========================================================================== */
 .laser-pointer {
   position: fixed;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background: #FF1A2A;
-  box-shadow: 0 0 6px #FFFFFF,
-              0 0 14px #FF0033,
-              0 0 30px #FF0000,
-              0 0 50px rgba(255, 0, 0, 0.6);
-  pointer-events: none;
-  z-index: 999999;
+  background: radial-gradient(circle, #FFFFFF 22%, #FF0028 58%, #B80018 100%) !important;
+  border: 2px solid rgba(0, 0, 0, 0.88) !important;
+  box-shadow: 0 0 0 2px #FFFFFF,
+              0 0 12px #FF0033,
+              0 0 28px #FF0000,
+              0 0 50px rgba(255, 0, 0, 0.75) !important;
+  pointer-events: none !important;
+  z-index: 2147483647 !important;
   transform: translate(-50%, -50%);
-  transition: opacity 0.15s ease;
+  transition: opacity 0.12s ease;
   mix-blend-mode: normal !important;
   display: none;
 }

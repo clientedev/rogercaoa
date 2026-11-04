@@ -23,7 +23,7 @@
   <!-- 16:9 Mathematically Scaled Canvas (1920x1080) -->
   <div id="slide-stage">
 
-            <!-- ==========================================
+        <!-- ==========================================
          SLIDE 1: CAPA EXECUTIVA MASTER (CAOA SEMINOVOS)
          ========================================== -->
     <section class="slide slide-cover active" id="slide-1">
@@ -34,16 +34,15 @@
       
       <div class="cover-content">
         <div class="cover-left">
-          <!-- Official Corporate Identity Header -->
-          <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 28px;">
-            <img src="assets/logo-white.png" alt="CAOA Seminovos" style="height: 66px;">
-            <div style="height: 28px; width: 1px; background: rgba(255, 255, 255, 0.2);"></div>
-            <span style="font-size: 13px; font-weight: 700; color: #A0AEC0; letter-spacing: 2px; text-transform: uppercase;">Apresentação Executiva</span>
+          <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 28px;">
+            <img src="assets/logo-white.png" alt="CAOA Seminovos" style="height: 72px;">
+            <div style="height: 38px; width: 1px; background: rgba(255, 255, 255, 0.25);"></div>
+            <span style="font-size: 13px; font-weight: 700; color: #C5CEE0; letter-spacing: 2px; text-transform: uppercase;">Inteligência de Mercado & Rede</span>
           </div>
 
           <div class="cover-tag-badge">
             <span class="cover-tag-dot"></span>
-            Outubro 2026
+            Relatório Gerencial Executivo • Outubro 2026
           </div>
 
           <h1 class="cover-title">
@@ -76,32 +75,1847 @@
           </div>
         </div>
 
-        <!-- Minimalist Executive Floating Dock (No extra text, no slides button) -->
+        <!-- Luxury Mobile QR Code Companion Card -->
+        <div class="cover-qr-card">
+          <span class="qr-badge">📱 Acompanhe a Apresentação</span>
+          <h3 class="qr-title">Acompanhe pelo Celular</h3>
+          <p class="qr-subtitle">Aponte a câmera do seu smartphone para navegar em sincronia e explorar todos os indicadores em tempo real.</p>
+          
+          <div class="qr-box" id="dynamic-qrcode">
+            <img src="assets/qrcode.png" alt="QR Code Apresentação CAOA" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+
+          <div class="qr-link-badge">
+            <span>🌐</span>
+            <a href="http://10.83.3.16:8080" id="qr-link-text" target="_blank">10.83.3.16:8080</a>
+          </div>
+
+
+        </div>
+      </div>
+
+      <footer class="slide-footer" style="background: rgba(18, 14, 51, 0.6); border-top-color: rgba(255, 255, 255, 0.1); color: #A0AEC0;">
+        <span class="footer-left">Grupo CAOA • Diretoria Executiva de Seminovos</span>
+        <span style="font-size: 13px; color: #C5CEE0;">Navegue pelas setas <kbd style="background: rgba(255,255,255,0.15); padding: 3px 8px; border-radius: 4px; color:#fff;">←</kbd> <kbd style="background: rgba(255,255,255,0.15); padding: 3px 8px; border-radius: 4px; color:#fff;">→</kbd> ou toque na tela</span>
+        <span class="slide-counter" style="color: var(--caoa-mint);">01 / 15</span>
+      </footer>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 2: VOLUME DE VENDAS 2026
+         ========================================== -->
+    <section class="slide" id="slide-2">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Desempenho Comercial</span>
+          <h2 class="slide-title">VOLUME DE VENDAS 2026</h2>
+          <p class="slide-subtitle">Evolução mensal de unidades vendidas, margem financeira ($ e %) e atingimento de metas</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> Outubro 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <!-- Top Metrics Row -->
+        <div class="kpi-metric-strip">
+          <div class="kpi-metric-card navy">
+            <span class="kpi-metric-label">Volume Realizado (Outubro)</span>
+            <span class="kpi-metric-value">2.505</span>
+            <span class="kpi-metric-sub" style="color: var(--caoa-blue);">Patamar forte sustentado</span>
+          </div>
+          <div class="kpi-metric-card mint">
+            <span class="kpi-metric-label">Meta Projetada (Novembro)</span>
+            <span class="kpi-metric-value" style="color: var(--caoa-mint-dark);">3.500</span>
+            <span class="kpi-metric-sub">Maior meta do exercício 2026</span>
+          </div>
+          <div class="kpi-metric-card">
+            <span class="kpi-metric-label">Margem Unitária (Recente)</span>
+            <span class="kpi-metric-value">R$ 2.704</span>
+            <span class="kpi-metric-sub" style="color: var(--caoa-slate);">3,42% sobre faturamento</span>
+          </div>
+          <div class="kpi-metric-card">
+            <span class="kpi-metric-label">Atingimento da Meta (Proj. Nov)</span>
+            <span class="kpi-metric-value">76%</span>
+            <span class="kpi-metric-sub">Alavancagem de fim de ano</span>
+          </div>
+        </div>
+
+        <!-- Main Chart Container -->
+        <div class="card" style="flex: 1; padding: 16px 20px; display: flex; flex-direction: column;">
+          <div class="card-title">
+            <span>Evolução Mensal de Volume e Rentabilidade (Jan a Nov)</span>
+            <div style="display: flex; gap: 16px; font-size: 12px; font-weight: 600;">
+              <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: #1D184B; border-radius: 2px;"></span> Volume Realizado</span>
+              <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; background: rgba(100, 194, 149, 0.5); border: 1px dashed #64C295; border-radius: 2px;"></span> Meta Novembro (3.500)</span>
+              <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 4px; background: #64C295; border-radius: 2px;"></span> Margem $ (R$)</span>
+            </div>
+          </div>
+          <div style="flex: 1; position: relative; min-height: 280px;">
+            <canvas id="chart-slide2"></canvas>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">🎯 Meta para Novembro</span>
+              <span class="insight-pill">Projeção</span>
+            </div>
+            <p class="insight-text">
+              O volume de <strong>3.500 unidades</strong> é a <strong>meta projetada para novembro</strong> (o maior desafio do ano), com atingimento estimado em <strong>76%</strong> para alavancar os resultados do último bimestre.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">📈 Recuperação no 2º Semestre</span>
+              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">Consistência</span>
+            </div>
+            <p class="insight-text">
+              Após a retração em fevereiro (1.307 unid.), o volume voltou a acelerar com vigor a partir de junho, superando a marca de <strong>2.500 unidades/mês</strong> em setembro e outubro.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">💎 Desempenho Consistente</span>
+              <span class="insight-pill" style="background: rgba(29, 24, 75, 0.08); color: var(--caoa-navy);">Rentabilidade</span>
+            </div>
+            <p class="insight-text">
+              A margem recente ficou em <strong>3,42% (R$ 2.704)</strong>, reforçando o equilíbrio estratégico entre ganho de escala comercial e retorno financeiro por veículo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Seminovos • Gestão Comercial & Metas 2026</span>
+        <span class="slide-counter">02 / 15</span>
+      </footer>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 3: GIRO DE ESTOQUE
+         ========================================== -->
+    <section class="slide" id="slide-3">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Gestão de Pátio</span>
+          <h2 class="slide-title">GIRO DE ESTOQUE</h2>
+          <p class="slide-subtitle">Velocidade média de rotação em 19 dias e perfil de envelhecimento por bandeira</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> Outubro 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <!-- Top Metrics Row -->
+        <div class="kpi-metric-strip">
+          <div class="kpi-metric-card mint">
+            <span class="kpi-metric-label">Giro Médio CAOA</span>
+            <span class="kpi-metric-value" style="color: var(--caoa-mint-dark);">19 Dias</span>
+            <span class="kpi-metric-sub">17 dias abaixo do mercado</span>
+          </div>
+          <div class="kpi-metric-card">
+            <span class="kpi-metric-label">Giro Referência Mercado</span>
+            <span class="kpi-metric-value">36 Dias</span>
+            <span class="kpi-metric-sub" style="color: var(--caoa-slate);">Média das concessionárias BR</span>
+          </div>
+          <div class="kpi-metric-card navy">
+            <span class="kpi-metric-label">Estoque Físico Total</span>
+            <span class="kpi-metric-value">1.627</span>
+            <span class="kpi-metric-sub" style="color: var(--caoa-blue);">Veículos em pátio</span>
+          </div>
+          <div class="kpi-metric-card">
+            <span class="kpi-metric-label">Veículos em Trânsito</span>
+            <span class="kpi-metric-value">1.554</span>
+            <span class="kpi-metric-sub">Fluxo de captação contínuo</span>
+          </div>
+        </div>
+
+        <!-- Middle Content: Aging Table & Month Track -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px; flex: 1;">
+          <!-- Table: Dias de Estoque por Marca -->
+          <div class="card" style="padding: 16px 20px; display: flex; flex-direction: column;">
+            <div class="card-title">Distribuição do Estoque por Faixa Etária e Marca</div>
+            <div class="table-container" style="flex: 1;">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Marca</th>
+                    <th class="text-center">&lt; 30 dias</th>
+                    <th class="text-center">31 a 45 dias</th>
+                    <th class="text-center">46 a 60 dias</th>
+                    <th class="text-center">61 a 90 dias</th>
+                    <th class="text-center">&gt; 90 dias</th>
+                    <th class="text-right">Total Estoque</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>CHERY</strong></td>
+                    <td class="text-center"><span class="badge-pill badge-mint">49%</span></td>
+                    <td class="text-center">19%</td>
+                    <td class="text-center">12%</td>
+                    <td class="text-center">13%</td>
+                    <td class="text-center">7%</td>
+                    <td class="text-right"><strong>838</strong></td>
+                  </tr>
+                  <tr>
+                    <td><strong>CHANGAN</strong></td>
+                    <td class="text-center"><span class="badge-pill badge-mint">46%</span></td>
+                    <td class="text-center">8%</td>
+                    <td class="text-center">8%</td>
+                    <td class="text-center">13%</td>
+                    <td class="text-center">4%</td>
+                    <td class="text-right"><strong>429</strong></td>
+                  </tr>
+                  <tr>
+                    <td><strong>HYUNDAI</strong></td>
+                    <td class="text-center"><span class="badge-pill badge-mint">52%</span></td>
+                    <td class="text-center">14%</td>
+                    <td class="text-center">17%</td>
+                    <td class="text-center">13%</td>
+                    <td class="text-center">9%</td>
+                    <td class="text-right"><strong>306</strong></td>
+                  </tr>
+                  <tr>
+                    <td><strong>FORD</strong></td>
+                    <td class="text-center"><span class="badge-pill badge-blue">24%</span></td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-center">-</td>
+                    <td class="text-right"><strong>86</strong></td>
+                  </tr>
+                  <tr class="total-row">
+                    <td><strong>NACIONAL</strong></td>
+                    <td class="text-center"><span class="badge-pill badge-mint">52%</span></td>
+                    <td class="text-center"><strong>15%</strong></td>
+                    <td class="text-center"><strong>14%</strong></td>
+                    <td class="text-center"><strong>14%</strong></td>
+                    <td class="text-center"><strong>5%</strong></td>
+                    <td class="text-right"><strong style="color: var(--caoa-navy); font-size: 15px;">1.627</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Historic Evolution Timeline Card -->
+          <div class="card" style="padding: 16px 20px; display: flex; flex-direction: column;">
+            <div class="card-title">Evolução Mensal do Giro (Dias)</div>
+            <div style="display: flex; flex-direction: column; justify-content: space-around; flex: 1; padding: 4px 0;">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EDF2F7; padding: 6px 0;">
+                <span style="font-size: 13px; font-weight: 600; color: var(--caoa-slate);">Janeiro</span>
+                <span style="font-weight: 700; color: var(--caoa-navy);">12 dias</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EDF2F7; padding: 6px 0;">
+                <span style="font-size: 13px; font-weight: 600; color: var(--caoa-slate);">Março</span>
+                <span style="font-weight: 700; color: var(--caoa-navy);">11 dias</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EDF2F7; padding: 6px 0;">
+                <span style="font-size: 13px; font-weight: 600; color: var(--caoa-slate);">Maio / Junho</span>
+                <span style="font-weight: 700; color: var(--caoa-navy);">12 a 15 dias</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EDF2F7; padding: 6px 0;">
+                <span style="font-size: 13px; font-weight: 600; color: var(--caoa-slate);">Julho</span>
+                <span style="font-weight: 700; color: var(--caoa-navy);">18 dias</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #EDF2F7; padding: 6px 0;">
+                <span style="font-size: 13px; font-weight: 600; color: var(--caoa-slate);">Setembro (Pico)</span>
+                <span style="font-weight: 700; color: var(--caoa-blue);">21 dias</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; background: rgba(100, 194, 149, 0.1); border-radius: 6px; padding-left: 8px; padding-right: 8px;">
+                <span style="font-size: 13px; font-weight: 700; color: var(--caoa-navy);">Outubro (Atual)</span>
+                <span style="font-weight: 800; color: var(--caoa-mint-dark);">19 dias</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">⚡ Giro Médio 19 Dias</span>
+              <span class="insight-pill">Benchmark</span>
+            </div>
+            <p class="insight-text">
+              O giro médio de <strong>19 dias</strong> posiciona a CAOA <strong>17 dias abaixo da média do mercado (36 dias)</strong>, reduzindo substancialmente custos financeiros de carregamento de estoque.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">📅 Melhor Resultado Recente</span>
+              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">Velocidade</span>
+            </div>
+            <p class="insight-text">
+              Setembro registrou <strong>21 dias</strong> e outubro consolidou <strong>19 dias</strong>, demonstrando alta tração comercial e pronta resposta da rede de seminovos.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">🛡️ Estoque Jovem e Saudável</span>
+              <span class="insight-pill" style="background: rgba(29, 24, 75, 0.08); color: var(--caoa-navy);">Qualidade</span>
+            </div>
+            <p class="insight-text">
+              <strong>52% do estoque nacional está concentrado em até 30 dias</strong> de pátio, com apenas 5% de veículos com mais de 90 dias, assegurando máxima liquidez.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Seminovos • Gestão & Saúde de Estoque</span>
+        <span class="slide-counter">03 / 15</span>
+      </footer>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 4: MESA DE AVALIAÇÃO (VISÃO MENSAL)
+         ========================================== -->
+    <section class="slide" id="slide-4">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Operação Trade In</span>
+          <h2 class="slide-title">MESA DE AVALIAÇÃO - EVOLUÇÃO MENSAL</h2>
+          <p class="slide-subtitle">Vendas varejo novos, captações de usados na troca e conversão histórica (Jan a Out/26)</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> Outubro 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <!-- Top Metrics Row -->
+        <div class="kpi-metric-strip">
+          <div class="kpi-metric-card mint">
+            <span class="kpi-metric-label">% Trade In (Outubro)</span>
+            <span class="kpi-metric-value" style="color: var(--caoa-mint-dark);">43,31%</span>
+            <span class="kpi-metric-sub">Maior índice registrado no ano!</span>
+          </div>
+          <div class="kpi-metric-card navy">
+            <span class="kpi-metric-label">Captações Acumuladas</span>
+            <span class="kpi-metric-value">78.361</span>
+            <span class="kpi-metric-sub" style="color: var(--caoa-blue);">Total de usados captados</span>
+          </div>
+          <div class="kpi-metric-card">
+            <span class="kpi-metric-label">Avaliações Totais Realizadas</span>
+            <span class="kpi-metric-value">312.974</span>
+            <span class="kpi-metric-sub">Fluxo nacional consolidado</span>
+          </div>
+          <div class="kpi-metric-card">
+            <span class="kpi-metric-label">Conversão Média Anual</span>
+            <span class="kpi-metric-value">25,04%</span>
+            <span class="kpi-metric-sub">Eficiência de fechamento</span>
+          </div>
+        </div>
+
+        <!-- Two Charts Side-by-Side -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; flex: 1;">
+          <!-- Chart 1: Vendas vs Captação e % Trade In -->
+          <div class="card" style="padding: 14px 18px; display: flex; flex-direction: column;">
+            <div class="card-title" style="margin-bottom: 8px;">Vendas Novos vs Captações Usados e % Trade In</div>
+            <div style="flex: 1; position: relative; min-height: 250px;">
+              <canvas id="chart-slide4-a"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 2: Avaliações e % Conversão -->
+          <div class="card" style="padding: 14px 18px; display: flex; flex-direction: column;">
+            <div class="card-title" style="margin-bottom: 8px;">Quantidade de Avaliações e % Conversão</div>
+            <div style="flex: 1; position: relative; min-height: 250px;">
+              <canvas id="chart-slide4-b"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">🏆 Recorde em Outubro</span>
+              <span class="insight-pill">43,31%</span>
+            </div>
+            <p class="insight-text">
+              O Trade In de outubro atingiu <strong>43,31%</strong>, a <strong>maior taxa de conversão em novos do ano</strong>, com 2.157 usados captados em 4.980 vendas.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">📊 Dinâmica de Avaliações</span>
+              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">Volume</span>
+            </div>
+            <p class="insight-text">
+              As avaliações atingiram pico de <strong>15.669 em agosto</strong> e sustentaram forte volume de <strong>11.785 em outubro</strong>, com índice de abertura em 2,37.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">🎯 Assertividade da Mesa</span>
+              <span class="insight-pill" style="background: rgba(29, 24, 75, 0.08); color: var(--caoa-navy);">Conversão</span>
+            </div>
+            <p class="insight-text">
+              A conversão atingiu o ponto mais alto em março com <strong>26,64%</strong> e fechou outubro em <strong>18,30%</strong> frente ao total de avaliações abertas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Seminovos • Inteligência de Mesa & Conversão</span>
+        <span class="slide-counter">04 / 15</span>
+      </footer>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 5: MESA DE AVALIAÇÃO POR MARCA
+         ========================================== -->
+    <section class="slide" id="slide-5">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Operação Trade In</span>
+          <h2 class="slide-title">MESA DE AVALIAÇÃO POR MARCA</h2>
+          <p class="slide-subtitle">Desempenho de vendas 0km, volume avaliado, aberturas e comparação com a média anual</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> Outubro 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 20px; flex: 1;">
+          <!-- Table Container -->
+          <div class="card" style="padding: 16px 20px; display: flex; flex-direction: column;">
+            <div class="card-title">Quadro Consolidado por Bandeira (Outubro/2026)</div>
+            <div class="table-container" style="flex: 1;">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Marca</th>
+                    <th class="text-right">Vendas VN</th>
+                    <th class="text-right">Avaliações</th>
+                    <th class="text-center">Abertura</th>
+                    <th class="text-center">% Trade In VN</th>
+                    <th class="text-center">Média Ano</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>CHERY</strong></td>
+                    <td class="text-right">2.436</td>
+                    <td class="text-right">5.904</td>
+                    <td class="text-center">2,42</td>
+                    <td class="text-center"><span class="badge-pill badge-mint">39,12%</span></td>
+                    <td class="text-center" style="color: var(--caoa-slate);">33,87%</td>
+                  </tr>
+                  <tr>
+                    <td><strong>CHANGAN</strong></td>
+                    <td class="text-right">1.755</td>
+                    <td class="text-right">3.807</td>
+                    <td class="text-center">2,17</td>
+                    <td class="text-center"><span class="badge-pill badge-mint">37,09%</span></td>
+                    <td class="text-center" style="color: var(--caoa-slate);">27,16%</td>
+                  </tr>
+                  <tr>
+                    <td><strong>HYUNDAI</strong></td>
+                    <td class="text-right">745</td>
+                    <td class="text-right">1.844</td>
+                    <td class="text-center">2,48</td>
+                    <td class="text-center"><span class="badge-pill badge-mint" style="font-size: 13px;">69,26%</span></td>
+                    <td class="text-center" style="color: var(--caoa-slate);">59,49%</td>
+                  </tr>
+                  <tr>
+                    <td><strong>FORD</strong></td>
+                    <td class="text-right">44</td>
+                    <td class="text-right">230</td>
+                    <td class="text-center">5,23</td>
+                    <td class="text-center"><span class="badge-pill badge-mint" style="font-size: 13px;">84,09%</span></td>
+                    <td class="text-center" style="color: var(--caoa-slate);">62,98%</td>
+                  </tr>
+                  <tr class="total-row">
+                    <td><strong>NACIONAL</strong></td>
+                    <td class="text-right"><strong>4.980</strong></td>
+                    <td class="text-right"><strong>11.785</strong></td>
+                    <td class="text-center"><strong>2,37</strong></td>
+                    <td class="text-center"><span class="badge-pill badge-navy" style="background: var(--caoa-navy); color: #fff; font-size: 13px;">43,31%</span></td>
+                    <td class="text-center"><strong>37,32%</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="font-size: 12px; color: var(--caoa-slate); margin-top: 10px; font-weight: 500;">
+              * Abertura = Relação de avaliações efetuadas para cada veículo novo comercializado.
+            </div>
+          </div>
+
+          <!-- Chart: Outubro vs Média Ano -->
+          <div class="card" style="padding: 16px 20px; display: flex; flex-direction: column;">
+            <div class="card-title">% Trade In Outubro vs Média Histórica do Ano</div>
+            <div style="flex: 1; position: relative; min-height: 250px;">
+              <canvas id="chart-slide5"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">🚗 Liderança Chery</span>
+              <span class="insight-pill">Volume</span>
+            </div>
+            <p class="insight-text">
+              Chery lidera o ecossistema com <strong>2.436 vendas</strong> e <strong>5.904 avaliações</strong>, fechando o Trade In em <strong>39,12%</strong> (+5,25 p.p. acima da média anual).
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">🚀 Alta Penetração Hyundai & Ford</span>
+              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">Destaque</span>
+            </div>
+            <p class="insight-text">
+              Ford registrou impressionantes <strong>84,09%</strong> de Trade In e a Hyundai atingiu <strong>69,26%</strong>, ambas muito superiores à média nacional de mercado.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">📈 Superação Generalizada</span>
+              <span class="insight-pill" style="background: rgba(29, 24, 75, 0.08); color: var(--caoa-navy);">Crescimento</span>
+            </div>
+            <p class="insight-text">
+              <strong>Todas as 4 bandeiras operaram em outubro acima de sua média anual</strong>, consolidando o resultado nacional em <strong>43,31%</strong> vs média anual de 37,32%.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Seminovos • Desempenho por Montadora</span>
+        <span class="slide-counter">05 / 15</span>
+      </footer>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 6: PRECIFICAÇÃO REPASSE VS SHOWROOM
+         ========================================== -->
+    <section class="slide" id="slide-6">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Precificação & Margem</span>
+          <h2 class="slide-title">PRECIFICAÇÃO: REPASSE VS SHOWROOM</h2>
+          <p class="slide-subtitle">Comparativo de precificação FIPE (Avaliado vs Captado) frente aos benchmarks nacionais</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> Outubro 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <!-- 4 Quadrants Dashboard -->
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; flex: 1;">
+          <!-- Quadrant 1: Repasse CAOA -->
+          <div class="card" style="border-top: 5px solid var(--caoa-navy); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span style="font-size: 12px; font-weight: 700; color: var(--caoa-navy); text-transform: uppercase; letter-spacing: 1px;">Operação Atacado</span>
+              <h3 style="font-size: 22px; font-weight: 800; color: var(--caoa-navy); margin-top: 4px;">Repasse CAOA</h3>
+            </div>
+            <div style="margin: 20px 0;">
+              <div style="font-size: 13px; font-weight: 600; color: var(--caoa-slate);">TOTAL AVALIADO</div>
+              <div style="font-size: 36px; font-weight: 800; color: var(--caoa-navy); margin-bottom: 16px;">6.260</div>
+              
+              <div style="background: #F8FAFD; border-radius: 8px; padding: 12px; margin-bottom: 12px;">
+                <div style="font-size: 12px; font-weight: 700; color: var(--caoa-slate);">FIPE / AVALIADO</div>
+                <div style="font-size: 28px; font-weight: 800; color: var(--caoa-navy);">72,12%</div>
+              </div>
+              <div style="background: rgba(100, 194, 149, 0.1); border-radius: 8px; padding: 12px;">
+                <div style="font-size: 12px; font-weight: 700; color: var(--caoa-mint-dark);">FIPE / CAPTADO</div>
+                <div style="font-size: 28px; font-weight: 800; color: var(--caoa-mint-dark);">~68,4%</div>
+              </div>
+            </div>
+            <div style="font-size: 12px; color: var(--caoa-slate); font-weight: 600;">+4,87 p.p. mais atrativo que mercado</div>
+          </div>
+
+          <!-- Quadrant 2: Repasse Mercado -->
+          <div class="card" style="border-top: 5px solid var(--caoa-slate); display: flex; flex-direction: column; justify-content: space-between; background: #FAFBFD;">
+            <div>
+              <span style="font-size: 12px; font-weight: 700; color: var(--caoa-slate); text-transform: uppercase; letter-spacing: 1px;">Benchmark Externo</span>
+              <h3 style="font-size: 22px; font-weight: 800; color: var(--caoa-slate); margin-top: 4px;">Repasse MERCADO</h3>
+            </div>
+            <div style="margin: 20px 0;">
+              <div style="font-size: 13px; font-weight: 600; color: var(--caoa-slate);">TOTAL AVALIADO</div>
+              <div style="font-size: 36px; font-weight: 800; color: var(--caoa-slate); margin-bottom: 16px;">126.200</div>
+              
+              <div style="background: #FFFFFF; border: 1px solid var(--caoa-card-border); border-radius: 8px; padding: 12px; margin-bottom: 12px;">
+                <div style="font-size: 12px; font-weight: 700; color: var(--caoa-slate);">FIPE / AVALIADO</div>
+                <div style="font-size: 28px; font-weight: 800; color: var(--caoa-slate);">67,25%</div>
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid var(--caoa-card-border); border-radius: 8px; padding: 12px;">
+                <div style="font-size: 12px; font-weight: 700; color: var(--caoa-slate);">FIPE / CAPTADO</div>
+                <div style="font-size: 28px; font-weight: 800; color: var(--caoa-slate);">~64,1%</div>
+              </div>
+            </div>
+            <div style="font-size: 12px; color: var(--caoa-slate);">Amostra de 126 mil veículos</div>
+          </div>
+
+          <!-- Quadrant 3: Showroom CAOA -->
+          <div class="card" style="border-top: 5px solid var(--caoa-mint); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span style="font-size: 12px; font-weight: 700; color: var(--caoa-mint-dark); text-transform: uppercase; letter-spacing: 1px;">Estoque Varejo Nobre</span>
+              <h3 style="font-size: 22px; font-weight: 800; color: var(--caoa-navy); margin-top: 4px;">Showroom CAOA</h3>
+            </div>
+            <div style="margin: 20px 0;">
+              <div style="font-size: 13px; font-weight: 600; color: var(--caoa-slate);">TOTAL AVALIADO</div>
+              <div style="font-size: 36px; font-weight: 800; color: var(--caoa-navy); margin-bottom: 16px;">5.157</div>
+              
+              <div style="background: #F8FAFD; border-radius: 8px; padding: 12px; margin-bottom: 12px;">
+                <div style="font-size: 12px; font-weight: 700; color: var(--caoa-slate);">FIPE / AVALIADO</div>
+                <div style="font-size: 28px; font-weight: 800; color: var(--caoa-navy);">85,40%</div>
+              </div>
+              <div style="background: rgba(100, 194, 149, 0.15); border-radius: 8px; padding: 12px;">
+                <div style="font-size: 12px; font-weight: 700; color: var(--caoa-mint-dark);">FIPE / CAPTADO</div>
+                <div style="font-size: 28px; font-weight: 800; color: var(--caoa-mint-dark);">82,88%</div>
+              </div>
+            </div>
+            <div style="font-size: 12px; color: var(--caoa-mint-dark); font-weight: 700;">Captação com alta assertividade</div>
+          </div>
+
+          <!-- Quadrant 4: Showroom Mercado -->
+          <div class="card" style="border-top: 5px solid var(--caoa-slate); display: flex; flex-direction: column; justify-content: space-between; background: #FAFBFD;">
+            <div>
+              <span style="font-size: 12px; font-weight: 700; color: var(--caoa-slate); text-transform: uppercase; letter-spacing: 1px;">Benchmark Externo</span>
+              <h3 style="font-size: 22px; font-weight: 800; color: var(--caoa-slate); margin-top: 4px;">Showroom MERCADO</h3>
+            </div>
+            <div style="margin: 20px 0;">
+              <div style="font-size: 13px; font-weight: 600; color: var(--caoa-slate);">TOTAL AVALIADO</div>
+              <div style="font-size: 36px; font-weight: 800; color: var(--caoa-slate); margin-bottom: 16px;">162.014</div>
+              
+              <div style="background: #FFFFFF; border: 1px solid var(--caoa-card-border); border-radius: 8px; padding: 12px; margin-bottom: 12px;">
+                <div style="font-size: 12px; font-weight: 700; color: var(--caoa-slate);">FIPE / AVALIADO</div>
+                <div style="font-size: 28px; font-weight: 800; color: var(--caoa-slate);">80,10%</div>
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid var(--caoa-card-border); border-radius: 8px; padding: 12px;">
+                <div style="font-size: 12px; font-weight: 700; color: var(--caoa-slate);">FIPE / CAPTADO</div>
+                <div style="font-size: 28px; font-weight: 800; color: var(--caoa-slate);">77,50%</div>
+              </div>
+            </div>
+            <div style="font-size: 12px; color: var(--caoa-slate);">Amostra de 162 mil veículos</div>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">⚖️ Atratividade no Repasse</span>
+              <span class="insight-pill">+4,87 p.p.</span>
+            </div>
+            <p class="insight-text">
+              A CAOA avalia veículos de repasse a <strong>72,12% FIPE vs 67,25% do mercado</strong>, gerando oferta mais agressiva para o cliente fechar a troca de seu seminovo.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">💎 Showroom de Alto Padrão</span>
+              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">82,88%</span>
+            </div>
+            <p class="insight-text">
+              O percentual <strong>FIPE captado de 82,88%</strong> garante retenção seletiva dos veículos em melhor estado de conservação, assegurando margem e garantia na revenda.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">🌐 Benchmark Amostral</span>
+              <span class="insight-pill" style="background: rgba(29, 24, 75, 0.08); color: var(--caoa-navy);">288 mil unid.</span>
+            </div>
+            <p class="insight-text">
+              A base comparativa reflete mais de <strong>288 mil avaliações no mercado brasileiro</strong> (126k repasse e 162k showroom), comprovando a consistência dos dados.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Seminovos • Competitividade de Precificação FIPE</span>
+        <span class="slide-counter">06 / 15</span>
+      </footer>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 7: TOTAL DE VENDAS POR MARCA SEMINOVOS
+         ========================================== -->
+    <section class="slide" id="slide-7">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Desempenho Comercial</span>
+          <h2 class="slide-title">TOTAL DE VENDAS - CONSOLIDADO POR MARCA</h2>
+          <p class="slide-subtitle">Volume consolidado de vendas de seminovos por bandeira do ecossistema CAOA</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> Outubro 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; flex: 1;">
+          <!-- Left: Big Number Cards Grid -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <!-- Chery -->
+            <div class="card" style="border-left: 6px solid #1D184B; display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+              <span style="font-size: 13px; font-weight: 700; color: var(--caoa-slate); text-transform: uppercase; letter-spacing: 1px;">Bandeira Líder</span>
+              <h3 style="font-size: 24px; font-weight: 800; color: var(--caoa-navy); margin-top: 4px;">CHERY</h3>
+              <div style="font-size: 42px; font-weight: 900; color: var(--caoa-navy); margin-top: 8px;">1.569</div>
+              <span style="font-size: 13px; font-weight: 600; color: var(--caoa-blue);">62,6% do portfólio de seminovos</span>
+            </div>
+
+            <!-- Hyundai -->
+            <div class="card" style="border-left: 6px solid #154578; display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+              <span style="font-size: 13px; font-weight: 700; color: var(--caoa-slate); text-transform: uppercase; letter-spacing: 1px;">Rede Consolidada</span>
+              <h3 style="font-size: 24px; font-weight: 800; color: var(--caoa-navy); margin-top: 4px;">HYUNDAI</h3>
+              <div style="font-size: 42px; font-weight: 900; color: #154578; margin-top: 8px;">580</div>
+              <span style="font-size: 13px; font-weight: 600; color: var(--caoa-slate);">23,2% do portfólio de seminovos</span>
+            </div>
+
+            <!-- Changan -->
+            <div class="card" style="border-left: 6px solid var(--caoa-mint); display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+              <span style="font-size: 13px; font-weight: 700; color: var(--caoa-slate); text-transform: uppercase; letter-spacing: 1px;">Nova Marca em Expansão</span>
+              <h3 style="font-size: 24px; font-weight: 800; color: var(--caoa-navy); margin-top: 4px;">CHANGAN</h3>
+              <div style="font-size: 42px; font-weight: 900; color: var(--caoa-mint-dark); margin-top: 8px;">308</div>
+              <span style="font-size: 13px; font-weight: 600; color: var(--caoa-mint-dark);">12,3% do portfólio de seminovos</span>
+            </div>
+
+            <!-- Ford -->
+            <div class="card" style="border-left: 6px solid var(--caoa-orange); display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+              <span style="font-size: 13px; font-weight: 700; color: var(--caoa-slate); text-transform: uppercase; letter-spacing: 1px;">Operação Exclusiva</span>
+              <h3 style="font-size: 24px; font-weight: 800; color: var(--caoa-navy); margin-top: 4px;">FORD</h3>
+              <div style="font-size: 42px; font-weight: 900; color: var(--caoa-orange); margin-top: 8px;">48</div>
+              <span style="font-size: 13px; font-weight: 600; color: var(--caoa-slate);">1,9% do portfólio de seminovos</span>
+            </div>
+          </div>
+
+          <!-- Right: Donut Chart & Consolidated Summary -->
+          <div class="card" style="padding: 18px 24px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="card-title">Composição do Volume de Seminovos (2.505 Unidades)</div>
+            <div style="flex: 1; position: relative; min-height: 230px;">
+              <canvas id="chart-slide7"></canvas>
+            </div>
+            <div style="background: #F8FAFD; border-radius: var(--radius-sm); padding: 12px 16px; margin-top: 12px; display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <div style="font-size: 12px; font-weight: 700; color: var(--caoa-slate);">VOLUME CONJUNTO MARCAS CAOA</div>
+                <div style="font-size: 20px; font-weight: 800; color: var(--caoa-navy);">3.464 unidades</div>
+              </div>
+              <div style="font-size: 12px; color: var(--caoa-slate); text-align: right;">
+                Soma: 1.569 + 580 + 308 + 48 <br>+ Operações Integradas
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">🏆 Chery no Topo</span>
+              <span class="insight-pill">1.569 unid.</span>
+            </div>
+            <p class="insight-text">
+              Destaque absoluto para a <strong>Chery com 1.569 unidades</strong> vendidas, respondendo por quase dois terços de todas as saídas de seminovos da rede.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">🏢 Liderança do Portfólio</span>
+              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">2.505 unid.</span>
+            </div>
+            <p class="insight-text">
+              A <strong>CAOA Seminovos atingiu 2.505 unidades comercializadas</strong> no mês de outubro, consolidando posição incontestável de liderança de mercado.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">🔄 Mix Equilibrado</span>
+              <span class="insight-pill" style="background: rgba(29, 24, 75, 0.08); color: var(--caoa-navy);">3.464 unid.</span>
+            </div>
+            <p class="insight-text">
+              O conjunto das marcas CAOA alcançou <strong>3.464 unidades</strong> (1.569 + 580 + 308 + 48), comprovando alta sinergia e diversificação da carteira.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Seminovos • Desempenho por Bandeira Comercial</span>
+        <span class="slide-counter">07 / 15</span>
+      </footer>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 8: EXCLUSIVA SEMINOVOS (LOJAS)
+         ========================================== -->
+    <section class="slide" id="slide-8">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Rede de Lojas Exclusivas</span>
+          <h2 class="slide-title">EXCLUSIVA SEMINOVOS - PERFORMANCE DE LOJAS</h2>
+          <p class="slide-subtitle">Metas, realizados, margem financeira e ticket médio por unidade exclusiva</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> Outubro 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <!-- Top Metrics Row -->
+        <div class="kpi-metric-strip">
+          <div class="kpi-metric-card mint">
+            <span class="kpi-metric-label">Atingimento Total de Metas</span>
+            <span class="kpi-metric-value" style="color: var(--caoa-mint-dark);">108%</span>
+            <span class="kpi-metric-sub">138 realizados frente à meta de 128</span>
+          </div>
+          <div class="kpi-metric-card navy">
+            <span class="kpi-metric-label">Margem Média Consolidada</span>
+            <span class="kpi-metric-value">R$ 4.119</span>
+            <span class="kpi-metric-sub" style="color: var(--caoa-blue);">4,49% sobre vendas</span>
+          </div>
+          <div class="kpi-metric-card">
+            <span class="kpi-metric-label">Ticket Médio Consolidado</span>
+            <span class="kpi-metric-value">R$ 91.869</span>
+            <span class="kpi-metric-sub">Forte perfil de veículos</span>
+          </div>
+          <div class="kpi-metric-card">
+            <span class="kpi-metric-label">Maior Margem Unitária</span>
+            <span class="kpi-metric-value" style="color: var(--caoa-navy);">R$ 4.964</span>
+            <span class="kpi-metric-sub">HMB Ricardo Jafet</span>
+          </div>
+        </div>
+
+        <!-- Full Table of Exclusive Stores -->
+        <div class="card" style="flex: 1; padding: 18px 24px; display: flex; flex-direction: column;">
+          <div class="card-title">Detalhamento por Unidade Exclusiva Seminovos</div>
+          <div class="table-container" style="flex: 1;">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Loja / Bandeira</th>
+                  <th class="text-center">Meta Exclusivas</th>
+                  <th class="text-center">Realizado</th>
+                  <th class="text-center">% Realizado</th>
+                  <th class="text-right">Margem (R$)</th>
+                  <th class="text-center">% Margem</th>
+                  <th class="text-right">Ticket Médio (R$)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Ford Seminovos</strong></td>
+                  <td class="text-center">15</td>
+                  <td class="text-center"><strong>18</strong></td>
+                  <td class="text-center"><span class="badge-pill badge-mint" style="font-size: 13px;">120%</span></td>
+                  <td class="text-right">R$ 4.298,33</td>
+                  <td class="text-center">4,12%</td>
+                  <td class="text-right">R$ 99.836</td>
+                </tr>
+                <tr>
+                  <td><strong>Clélia Seminovos</strong></td>
+                  <td class="text-center">42</td>
+                  <td class="text-center"><strong>46</strong></td>
+                  <td class="text-center"><span class="badge-pill badge-mint" style="font-size: 13px;">110%</span></td>
+                  <td class="text-right">R$ 4.672,26</td>
+                  <td class="text-center"><span class="badge-pill badge-mint">5,68%</span></td>
+                  <td class="text-right"><strong>R$ 100.004</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>HMB Ricardo Jafet</strong></td>
+                  <td class="text-center">36</td>
+                  <td class="text-center"><strong>36</strong></td>
+                  <td class="text-center"><span class="badge-pill badge-blue" style="font-size: 13px;">100%</span></td>
+                  <td class="text-right"><strong style="color: var(--caoa-navy);">R$ 4.964,45</strong></td>
+                  <td class="text-center">5,10%</td>
+                  <td class="text-right">R$ 87.735</td>
+                </tr>
+                <tr>
+                  <td><strong>A21 Motors Imbiribeira</strong></td>
+                  <td class="text-center">35</td>
+                  <td class="text-center"><strong>38</strong></td>
+                  <td class="text-center"><span class="badge-pill badge-mint" style="font-size: 13px;">109%</span></td>
+                  <td class="text-right">R$ 2.563,69</td>
+                  <td class="text-center">3,15%</td>
+                  <td class="text-right">R$ 83.026</td>
+                </tr>
+                <tr class="total-row">
+                  <td><strong>TOTAL EXCLUSIVAS</strong></td>
+                  <td class="text-center"><strong>128</strong></td>
+                  <td class="text-center"><strong style="font-size: 16px; color: var(--caoa-navy);">138</strong></td>
+                  <td class="text-center"><span class="badge-pill badge-navy" style="background: var(--caoa-navy); color: #fff; font-size: 14px;">108%</span></td>
+                  <td class="text-right"><strong style="font-size: 15px; color: var(--caoa-navy);">R$ 4.119,09</strong></td>
+                  <td class="text-center"><strong style="font-size: 14px; color: var(--caoa-mint-dark);">4,49%</strong></td>
+                  <td class="text-right"><strong style="font-size: 15px; color: var(--caoa-navy);">R$ 91.869</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">🎯 100% das Lojas na Meta</span>
+              <span class="insight-pill">108%</span>
+            </div>
+            <p class="insight-text">
+              As unidades exclusivas totalizaram <strong>138 vendas frente à meta de 128 (108%)</strong>, com destaque para a <strong>Ford Seminovos (120%)</strong> e <strong>Clélia (110%)</strong>.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">💰 Clélia Campeã de Margem</span>
+              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">5,68%</span>
+            </div>
+            <p class="insight-text">
+              Clélia Seminovos registrou a <strong>maior rentabilidade percentual (5,68%)</strong> aliada ao maior ticket médio do grupo: <strong>R$ 100.004 por veículo</strong>.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">💎 Rentabilidade em Reais</span>
+              <span class="insight-pill" style="background: rgba(29, 24, 75, 0.08); color: var(--caoa-navy);">R$ 4.964</span>
+            </div>
+            <p class="insight-text">
+              <strong>HMB Ricardo Jafet</strong> alcançou a maior margem financeira unitária absoluta com <strong>R$ 4.964,45 de margem bruta por veículo</strong> vendido.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Seminovos • Lojas Exclusivas & Rentabilidade</span>
+        <span class="slide-counter">08 / 15</span>
+      </footer>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 9: RANKING TRADE IN - CAOA CHERY
+         ========================================== -->
+    <section class="slide" id="slide-9">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Rankings de Trade In</span>
+          <h2 class="slide-title">DESEMPENHO DE TRADE IN - CAOA CHERY</h2>
+          <p class="slide-subtitle">Top 10 Melhores Unidades em Conversão vs Top 10 Lojas com Oportunidade de Desenvolvimento</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> Outubro 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; flex: 1;">
+          <!-- Top 10 Melhores -->
+          <div class="card" style="padding: 14px 18px; display: flex; flex-direction: column;">
+            <div class="card-title" style="color: var(--caoa-mint-dark);">
+              <span>🏆 TOP 10 | MELHORES TRADE IN</span>
+              <span style="font-size: 12px; color: var(--caoa-slate); font-weight: 600;">Maior Conversão</span>
+            </div>
+            <div class="table-container" style="flex: 1;">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Reg</th>
+                    <th>Empresa / Nome Fantasia</th>
+                    <th class="text-right">Vendas</th>
+                    <th class="text-right">Compras</th>
+                    <th class="text-right">% Trade In</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>CY1</td><td>D21-0128-ANHANGUERA</td><td class="text-right">13</td><td class="text-right">9</td><td class="text-right"><span class="badge-pill badge-mint">69,23%</span></td></tr>
+                  <tr><td>CY1</td><td>D21-2503-ARICANDUVA</td><td class="text-right">60</td><td class="text-right">39</td><td class="text-right"><span class="badge-pill badge-mint">65,00%</span></td></tr>
+                  <tr><td>CY1</td><td>D21-0470-MORUMBI</td><td class="text-right">19</td><td class="text-right">12</td><td class="text-right"><span class="badge-pill badge-mint">63,16%</span></td></tr>
+                  <tr><td>CY2</td><td>D21-3909-ITU</td><td class="text-right">16</td><td class="text-right">10</td><td class="text-right"><span class="badge-pill badge-mint">62,50%</span></td></tr>
+                  <tr><td>CY4</td><td>D21-7483-NITEROI</td><td class="text-right">21</td><td class="text-right">13</td><td class="text-right"><span class="badge-pill badge-mint">61,90%</span></td></tr>
+                  <tr><td>CY2</td><td>D21-8102-PRAIA GRANDE</td><td class="text-right">27</td><td class="text-right">16</td><td class="text-right"><span class="badge-pill badge-mint">59,26%</span></td></tr>
+                  <tr><td>CY5</td><td>D21-5600-CASA FORTE</td><td class="text-right">36</td><td class="text-right">21</td><td class="text-right"><span class="badge-pill badge-mint">58,33%</span></td></tr>
+                  <tr><td>CY1</td><td>D21-0551-RICARDO JAFET</td><td class="text-right">48</td><td class="text-right">27</td><td class="text-right"><span class="badge-pill badge-mint">56,25%</span></td></tr>
+                  <tr><td>CY1</td><td>D21-2171-JOAO DIAS</td><td class="text-right">36</td><td class="text-right">20</td><td class="text-right"><span class="badge-pill badge-mint">55,56%</span></td></tr>
+                  <tr><td>CY4</td><td>D21-1442-BOTAFOGO</td><td class="text-right">20</td><td class="text-right">11</td><td class="text-right"><span class="badge-pill badge-mint">55,00%</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Top 10 A Desenvolver -->
+          <div class="card" style="padding: 14px 18px; display: flex; flex-direction: column;">
+            <div class="card-title" style="color: var(--caoa-orange);">
+              <span>⚠️ TOP 10 | TRADE IN A DESENVOLVER</span>
+              <span style="font-size: 12px; color: var(--caoa-slate); font-weight: 600;">Oportunidades</span>
+            </div>
+            <div class="table-container" style="flex: 1;">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Reg</th>
+                    <th>Empresa / Nome Fantasia</th>
+                    <th class="text-right">Vendas</th>
+                    <th class="text-right">Compras</th>
+                    <th class="text-right">% Trade In</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>CY2</td><td>D21-7807-ARACATUBA</td><td class="text-right">11</td><td class="text-right">1</td><td class="text-right"><span class="badge-pill badge-red">9,09%</span></td></tr>
+                  <tr><td>CY4</td><td>D21-7726-PRESIDENTE PRUDENTE</td><td class="text-right">21</td><td class="text-right">2</td><td class="text-right"><span class="badge-pill badge-red">9,52%</span></td></tr>
+                  <tr><td>CY4</td><td>D21-4620-ANAPOLIS</td><td class="text-right">48</td><td class="text-right">5</td><td class="text-right"><span class="badge-pill badge-orange">10,42%</span></td></tr>
+                  <tr><td>CY3</td><td>D21-3810-CAXIAS DO SUL</td><td class="text-right">24</td><td class="text-right">3</td><td class="text-right"><span class="badge-pill badge-orange">12,50%</span></td></tr>
+                  <tr><td>CY3</td><td>D21-2929-LONDRINA</td><td class="text-right">21</td><td class="text-right">3</td><td class="text-right"><span class="badge-pill badge-orange">14,29%</span></td></tr>
+                  <tr><td>CY3</td><td>D21-2848-MARINGA</td><td class="text-right">56</td><td class="text-right">10</td><td class="text-right"><span class="badge-pill badge-orange">17,86%</span></td></tr>
+                  <tr><td>CY5</td><td>D21-1523-CABEDELO</td><td class="text-right">25</td><td class="text-right">5</td><td class="text-right"><span class="badge-pill badge-blue">20,00%</span></td></tr>
+                  <tr><td>CY2</td><td>D21-3496-S.J. DO RIO PRETO</td><td class="text-right">53</td><td class="text-right">11</td><td class="text-right"><span class="badge-pill badge-blue">20,75%</span></td></tr>
+                  <tr><td>CY4</td><td>D21-4891-MS-CAMPO GRANDE</td><td class="text-right">41</td><td class="text-right">9</td><td class="text-right"><span class="badge-pill badge-blue">21,95%</span></td></tr>
+                  <tr><td>CY3</td><td>D21-2252-ESTORIL</td><td class="text-right">47</td><td class="text-right">11</td><td class="text-right"><span class="badge-pill badge-blue">23,40%</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">🥇 Maior Conversão</span>
+              <span class="insight-pill">69,23%</span>
+            </div>
+            <p class="insight-text">
+              <strong>D21-0128-ANHANGUERA</strong> lidera a rede com <strong>69,23% de conversão</strong> (9 compras de usados para 13 vendas de 0km).
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">📦 Destaque de Volume</span>
+              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">39 compras</span>
+            </div>
+            <p class="insight-text">
+              <strong>D21-2503-ARICANDUVA</strong> registrou expressivas <strong>39 compras em 60 vendas</strong>, sustentando altíssima conversão de <strong>65,00%</strong>.
+            </p>
+          </div>
+          <div class="insight-card orange-accent">
+            <div class="insight-header">
+              <span class="insight-title">🎯 Menores Conversões</span>
+              <span class="insight-pill" style="background: var(--caoa-red-bg); color: var(--caoa-red);">Atenção</span>
+            </div>
+            <p class="insight-text">
+              <strong>Araçatuba (9,09%)</strong> e <strong>Presidente Prudente (9,52%)</strong> representam o maior potencial reprimido para implantação de processo de mesa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Chery • Ranking de Conversão de Trade In</span>
+        <span class="slide-counter">09 / 15</span>
+      </footer>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 10: RANKING TRADE IN - CAOA CHANGAN
+         ========================================== -->
+    <section class="slide" id="slide-10">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Rankings de Trade In</span>
+          <h2 class="slide-title">DESEMPENHO DE TRADE IN - CAOA CHANGAN</h2>
+          <p class="slide-subtitle">Top 10 Melhores Unidades em Conversão vs Top 10 Lojas com Oportunidade de Desenvolvimento</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> Outubro 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; flex: 1;">
+          <!-- Top 10 Melhores -->
+          <div class="card" style="padding: 14px 18px; display: flex; flex-direction: column;">
+            <div class="card-title" style="color: var(--caoa-mint-dark);">
+              <span>🏆 TOP 10 | MELHORES TRADE IN</span>
+              <span style="font-size: 12px; color: var(--caoa-slate); font-weight: 600;">Maior Conversão</span>
+            </div>
+            <div class="table-container" style="flex: 1;">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Reg</th>
+                    <th>Empresa / Nome Fantasia</th>
+                    <th class="text-right">Vendas</th>
+                    <th class="text-right">Compras</th>
+                    <th class="text-right">% Trade In</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>A1</td><td>A21-0353-CAMPINA GRANDE</td><td class="text-right">23</td><td class="text-right">16</td><td class="text-right"><span class="badge-pill badge-mint">69,57%</span></td></tr>
+                  <tr><td>A1</td><td>A21-0272-JOAO DIAS</td><td class="text-right">27</td><td class="text-right">17</td><td class="text-right"><span class="badge-pill badge-mint">62,96%</span></td></tr>
+                  <tr><td>A2</td><td>A21-1325-SOROCABA</td><td class="text-right">22</td><td class="text-right">13</td><td class="text-right"><span class="badge-pill badge-mint">59,09%</span></td></tr>
+                  <tr><td>A1</td><td>A21-2488-RICARDO JAFET</td><td class="text-right">30</td><td class="text-right">16</td><td class="text-right"><span class="badge-pill badge-mint">53,33%</span></td></tr>
+                  <tr><td>A3</td><td>A21-1910-FLORIANOPOLIS</td><td class="text-right">41</td><td class="text-right">21</td><td class="text-right"><span class="badge-pill badge-mint">51,22%</span></td></tr>
+                  <tr><td>A1</td><td>A21-0787-SANTO ANDRE</td><td class="text-right">58</td><td class="text-right">28</td><td class="text-right"><span class="badge-pill badge-mint">48,28%</span></td></tr>
+                  <tr><td>A1</td><td>A21-0949-IMBIRIBEIRA</td><td class="text-right">49</td><td class="text-right">23</td><td class="text-right"><span class="badge-pill badge-mint">46,94%</span></td></tr>
+                  <tr><td>A3</td><td>A21-0604-POA</td><td class="text-right">104</td><td class="text-right">47</td><td class="text-right"><span class="badge-pill badge-mint">45,19%</span></td></tr>
+                  <tr><td>A3</td><td>A21-2216-CAMBORIU</td><td class="text-right">31</td><td class="text-right">14</td><td class="text-right"><span class="badge-pill badge-mint">45,16%</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Top 10 A Desenvolver -->
+          <div class="card" style="padding: 14px 18px; display: flex; flex-direction: column;">
+            <div class="card-title" style="color: var(--caoa-orange);">
+              <span>⚠️ TOP 10 | TRADE IN A DESENVOLVER</span>
+              <span style="font-size: 12px; color: var(--caoa-slate); font-weight: 600;">Oportunidades</span>
+            </div>
+            <div class="table-container" style="flex: 1;">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Reg</th>
+                    <th>Empresa / Nome Fantasia</th>
+                    <th class="text-right">Vendas</th>
+                    <th class="text-right">Compras</th>
+                    <th class="text-right">% Trade In</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>A3</td><td>A21-7764-LONDRINA</td><td class="text-right">33</td><td class="text-right">6</td><td class="text-right"><span class="badge-pill badge-orange">18,18%</span></td></tr>
+                  <tr><td>A3</td><td>A21-2720-CAXIAS DO SUL</td><td class="text-right">20</td><td class="text-right">4</td><td class="text-right"><span class="badge-pill badge-orange">20,00%</span></td></tr>
+                  <tr><td>A2</td><td>A21-1406-CAMPO GRANDE</td><td class="text-right">22</td><td class="text-right">5</td><td class="text-right"><span class="badge-pill badge-blue">22,73%</span></td></tr>
+                  <tr><td>A1</td><td>A21-1597-MACEIO</td><td class="text-right">13</td><td class="text-right">3</td><td class="text-right"><span class="badge-pill badge-blue">23,08%</span></td></tr>
+                  <tr><td>A1</td><td>A21-0515-GUARULHOS</td><td class="text-right">59</td><td class="text-right">14</td><td class="text-right"><span class="badge-pill badge-blue">23,73%</span></td></tr>
+                  <tr><td>A2</td><td>A21-2640-ITU</td><td class="text-right">12</td><td class="text-right">3</td><td class="text-right"><span class="badge-pill badge-blue">25,00%</span></td></tr>
+                  <tr><td>A2</td><td>A21-7411-RIBEIRAO PRETO</td><td class="text-right">56</td><td class="text-right">14</td><td class="text-right"><span class="badge-pill badge-blue">25,00%</span></td></tr>
+                  <tr><td>A2</td><td>A21-3107-ASA NORTE</td><td class="text-right">34</td><td class="text-right">9</td><td class="text-right"><span class="badge-pill badge-blue">26,47%</span></td></tr>
+                  <tr><td>A3</td><td>A21-8022-MARIO TOURINHO</td><td class="text-right">98</td><td class="text-right">26</td><td class="text-right"><span class="badge-pill badge-blue">26,53%</span></td></tr>
+                  <tr><td>A2</td><td>A21-3530-ARACATUBA</td><td class="text-right">26</td><td class="text-right">7</td><td class="text-right"><span class="badge-pill badge-blue">26,92%</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">📍 Referência de Conversão</span>
+              <span class="insight-pill">69,57%</span>
+            </div>
+            <p class="insight-text">
+              <strong>Campina Grande lidera</strong> o ranking Changan com <strong>69,57%</strong> (16 compras de usados para 23 vendas de novos).
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">📦 Destaque Absoluto de Volume</span>
+              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">104 Vendas</span>
+            </div>
+            <p class="insight-text">
+              <strong>POA (Porto Alegre)</strong> registra recorde com <strong>104 vendas 0km e 47 compras na troca</strong>, com 45,19% de conversão sustentada.
+            </p>
+          </div>
+          <div class="insight-card orange-accent">
+            <div class="insight-header">
+              <span class="insight-title">⚡ Oportunidade de Evolução</span>
+              <span class="insight-pill" style="background: var(--caoa-orange-bg); color: var(--caoa-orange);">18,18%</span>
+            </div>
+            <p class="insight-text">
+              <strong>Londrina apresenta 18,18%</strong>, menor índice da amostra, apontando forte margem para crescimento na captação local de usados.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Changan • Ranking de Conversão de Trade In</span>
+        <span class="slide-counter">10 / 15</span>
+      </footer>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 11: RANKING TRADE IN - HYUNDAI
+         ========================================== -->
+    <section class="slide" id="slide-11">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Rankings de Trade In</span>
+          <h2 class="slide-title">DESEMPENHO DE TRADE IN - HYUNDAI</h2>
+          <p class="slide-subtitle">Top 10 Melhores Unidades em Conversão vs Top 10 Lojas com Oportunidade de Desenvolvimento</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> Outubro 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; flex: 1;">
+          <!-- Top 10 Melhores -->
+          <div class="card" style="padding: 14px 18px; display: flex; flex-direction: column;">
+            <div class="card-title" style="color: var(--caoa-mint-dark);">
+              <span>🏆 TOP 10 | MELHORES TRADE IN</span>
+              <span style="font-size: 12px; color: var(--caoa-slate); font-weight: 600;">Maior Conversão</span>
+            </div>
+            <div class="table-container" style="flex: 1;">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Reg</th>
+                    <th>Empresa / Nome Fantasia</th>
+                    <th class="text-right">Vendas</th>
+                    <th class="text-right">Compras</th>
+                    <th class="text-right">% Trade In</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>HY3</td><td>HB-1471-Sao Carlos</td><td class="text-right">8</td><td class="text-right">7</td><td class="text-right"><span class="badge-pill badge-mint">87,50%</span></td></tr>
+                  <tr><td>HY7</td><td>HB-6279-Jacarepagua</td><td class="text-right">13</td><td class="text-right">11</td><td class="text-right"><span class="badge-pill badge-mint">84,62%</span></td></tr>
+                  <tr><td>HY2</td><td>HB-0319-Ceasa</td><td class="text-right">25</td><td class="text-right">21</td><td class="text-right"><span class="badge-pill badge-mint">84,00%</span></td></tr>
+                  <tr><td>HY7</td><td>HB-4900-Barra Da Tijuca</td><td class="text-right">40</td><td class="text-right">33</td><td class="text-right"><span class="badge-pill badge-mint">82,50%</span></td></tr>
+                  <tr><td>HY7</td><td>HB-2524-Recreio</td><td class="text-right">33</td><td class="text-right">27</td><td class="text-right"><span class="badge-pill badge-mint">81,82%</span></td></tr>
+                  <tr><td>HY3</td><td>HB-3687-Praia Grande</td><td class="text-right">26</td><td class="text-right">21</td><td class="text-right"><span class="badge-pill badge-mint">80,77%</span></td></tr>
+                  <tr><td>HY2</td><td>HB-1714-Anhaia Melo</td><td class="text-right">25</td><td class="text-right">20</td><td class="text-right"><span class="badge-pill badge-mint">80,00%</span></td></tr>
+                  <tr><td>HY7</td><td>HB-2605-RJ-Botafogo</td><td class="text-right">15</td><td class="text-right">12</td><td class="text-right"><span class="badge-pill badge-mint">80,00%</span></td></tr>
+                  <tr><td>HY7</td><td>HB-3849-RJ Magalhaes</td><td class="text-right">21</td><td class="text-right">16</td><td class="text-right"><span class="badge-pill badge-mint">76,19%</span></td></tr>
+                  <tr><td>HY2</td><td>HB-1129-Ric Jafet</td><td class="text-right">20</td><td class="text-right">15</td><td class="text-right"><span class="badge-pill badge-mint">75,00%</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Top 10 A Desenvolver -->
+          <div class="card" style="padding: 14px 18px; display: flex; flex-direction: column;">
+            <div class="card-title" style="color: var(--caoa-orange);">
+              <span>⚠️ TOP 10 | TRADE IN A DESENVOLVER</span>
+              <span style="font-size: 12px; color: var(--caoa-slate); font-weight: 600;">Oportunidades</span>
+            </div>
+            <div class="table-container" style="flex: 1;">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Reg</th>
+                    <th>Empresa / Nome Fantasia</th>
+                    <th class="text-right">Vendas</th>
+                    <th class="text-right">Compras</th>
+                    <th class="text-right">% Trade In</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>HY2</td><td>HB-4063-JK</td><td class="text-right">8</td><td class="text-right">3</td><td class="text-right"><span class="badge-pill badge-orange">37,50%</span></td></tr>
+                  <tr><td>HY3</td><td>HB-0580-Taubate</td><td class="text-right">5</td><td class="text-right">2</td><td class="text-right"><span class="badge-pill badge-orange">40,00%</span></td></tr>
+                  <tr><td>HY2</td><td>HB-3091-Aricanduva</td><td class="text-right">21</td><td class="text-right">10</td><td class="text-right"><span class="badge-pill badge-blue">47,62%</span></td></tr>
+                  <tr><td>HY2</td><td>HB-1048-Ibirapuera</td><td class="text-right">21</td><td class="text-right">11</td><td class="text-right"><span class="badge-pill badge-blue">52,38%</span></td></tr>
+                  <tr><td>HY5</td><td>HB-3172-BH Centro</td><td class="text-right">26</td><td class="text-right">14</td><td class="text-right"><span class="badge-pill badge-blue">53,85%</span></td></tr>
+                  <tr><td>HY3</td><td>HB-0157-Nacoes Unidas</td><td class="text-right">27</td><td class="text-right">15</td><td class="text-right"><span class="badge-pill badge-blue">55,56%</span></td></tr>
+                  <tr><td>HY7</td><td>HB-2443-RJ-Niteroi</td><td class="text-right">29</td><td class="text-right">18</td><td class="text-right"><span class="badge-pill badge-blue">62,07%</span></td></tr>
+                  <tr><td>HY3</td><td>HB-0904-Consolacao</td><td class="text-right">8</td><td class="text-right">5</td><td class="text-right"><span class="badge-pill badge-blue">62,50%</span></td></tr>
+                  <tr><td>HY7</td><td>HB-5205-Tijuca</td><td class="text-right">24</td><td class="text-right">15</td><td class="text-right"><span class="badge-pill badge-blue">62,50%</span></td></tr>
+                  <tr><td>HY3</td><td>HB-0238-S.J.Campos</td><td class="text-right">19</td><td class="text-right">12</td><td class="text-right"><span class="badge-pill badge-blue">63,16%</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">🏆 Maior Conversão</span>
+              <span class="insight-pill">87,50%</span>
+            </div>
+            <p class="insight-text">
+              <strong>São Carlos lidera</strong> a rede Hyundai com <strong>87,50%</strong> (7 compras de seminovos para 8 vendas de 0km).
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">📦 Maior Volume de Compras</span>
+              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">33 compras</span>
+            </div>
+            <p class="insight-text">
+              <strong>Barra da Tijuca</strong> registra <strong>33 compras em 40 vendas (82,50%)</strong>, demonstrando excelente processo de mesa e retenção de frota.
+            </p>
+          </div>
+          <div class="insight-card orange-accent">
+            <div class="insight-header">
+              <span class="insight-title">⚡ Oportunidade de Evolução</span>
+              <span class="insight-pill" style="background: var(--caoa-orange-bg); color: var(--caoa-orange);">37,50%</span>
+            </div>
+            <p class="insight-text">
+              <strong>JK apresenta 37,50%</strong> (3 compras em 8 vendas) e <strong>Taubaté 40,00%</strong>, ambas com meta de alinhamento com a média da marca (69,26%).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Hyundai • Ranking de Conversão de Trade In</span>
+        <span class="slide-counter">11 / 15</span>
+      </footer>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 12: RANKING TRADE IN - FORD
+         ========================================== -->
+    <section class="slide" id="slide-12">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Rankings de Trade In</span>
+          <h2 class="slide-title">DESEMPENHO DE TRADE IN - FORD</h2>
+          <p class="slide-subtitle">Ranking das unidades por conversão e oportunidades de desenvolvimento operacional</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> Outubro 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 24px; flex: 1;">
+          <!-- Table Container -->
+          <div class="card" style="padding: 18px 24px; display: flex; flex-direction: column;">
+            <div class="card-title">Desempenho da Rede Ford (Outubro/2026)</div>
+            <div class="table-container" style="flex: 1;">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Rkg</th>
+                    <th>Regional</th>
+                    <th>Empresa / Nome Fantasia</th>
+                    <th class="text-right">Vendas 0km</th>
+                    <th class="text-right">Compras</th>
+                    <th class="text-right">% Trade In</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="highlight-row">
+                    <td>1</td>
+                    <td>F1</td>
+                    <td><strong>Ford-1755-Santos</strong></td>
+                    <td class="text-right">1</td>
+                    <td class="text-right">7</td>
+                    <td class="text-right"><span class="badge-pill badge-mint" style="font-size: 14px;">700,00%</span></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>F1</td>
+                    <td><strong>Ford-1321-Jabaquara</strong></td>
+                    <td class="text-right">9</td>
+                    <td class="text-right">11</td>
+                    <td class="text-right"><span class="badge-pill badge-mint" style="font-size: 14px;">122,22%</span></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>F1</td>
+                    <td><strong>Ford-1593-Ceasa</strong></td>
+                    <td class="text-right">9</td>
+                    <td class="text-right">6</td>
+                    <td class="text-right"><span class="badge-pill badge-blue" style="font-size: 14px;">66,67%</span></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>F1</td>
+                    <td><strong>Ford-0110-Paulinvel</strong></td>
+                    <td class="text-right">20</td>
+                    <td class="text-right">13</td>
+                    <td class="text-right"><span class="badge-pill badge-blue" style="font-size: 14px;">65,00%</span></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>F1</td>
+                    <td><strong>Ford-2050-Campinas</strong></td>
+                    <td class="text-right">5</td>
+                    <td class="text-right" style="color: var(--caoa-slate);">-</td>
+                    <td class="text-right"><span class="badge-pill badge-orange">Em apuração</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="font-size: 12px; color: var(--caoa-slate); margin-top: 12px;">
+              * Santos e Jabaquara atuam fortemente na captação direta de seminovos além do fluxo direto de 0km.
+            </div>
+          </div>
+
+          <!-- Highlight Cards Column -->
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="card" style="border-left: 6px solid var(--caoa-mint); padding: 20px;">
+              <span style="font-size: 12px; font-weight: 700; color: var(--caoa-mint-dark); text-transform: uppercase;">Captação Ativa Externa</span>
+              <h4 style="font-size: 20px; font-weight: 800; color: var(--caoa-navy); margin-top: 4px;">Santos: 700% de Trade In</h4>
+              <p style="font-size: 14px; color: var(--caoa-slate); margin-top: 8px; line-height: 1.4;">
+                A unidade de Santos registrou <strong>7 compras de seminovos para 1 venda de novo</strong>, atuando como um polo ativo de captação para o estoque regional.
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 6px solid var(--caoa-blue); padding: 20px;">
+              <span style="font-size: 12px; font-weight: 700; color: var(--caoa-blue); text-transform: uppercase;">Líder de Volume</span>
+              <h4 style="font-size: 20px; font-weight: 800; color: var(--caoa-navy); margin-top: 4px;">Paulinvel: 20 Novos e 13 Compras</h4>
+              <p style="font-size: 14px; color: var(--caoa-slate); margin-top: 8px; line-height: 1.4;">
+                Paulinvel respondeu pelo maior volume da bandeira, com <strong>20 veículos 0km vendidos e 13 seminovos captados (65,00%)</strong>.
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 6px solid var(--caoa-orange); padding: 20px;">
+              <span style="font-size: 12px; font-weight: 700; color: var(--caoa-orange); text-transform: uppercase;">Pendência de Integração</span>
+              <h4 style="font-size: 20px; font-weight: 800; color: var(--caoa-navy); margin-top: 4px;">Campinas: Integração de Dados</h4>
+              <p style="font-size: 14px; color: var(--caoa-slate); margin-top: 8px; line-height: 1.4;">
+                Campinas registrou 5 vendas; compras e percentual em finalização de apuração sistêmica.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">⚡ Maior Conversão</span>
+              <span class="insight-pill">700,00%</span>
+            </div>
+            <p class="insight-text">
+              <strong>Santos registra 700,00%:</strong> 7 compras de usados para 1 venda de 0km, consolidando modelo híbrido de captação agressiva.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">📦 Maior Volume</span>
+              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">20 Vendas</span>
+            </div>
+            <p class="insight-text">
+              <strong>Paulinvel lidera em vendas</strong> na rede Ford com 20 veículos comercializados e 13 compras na troca (65,00%).
+            </p>
+          </div>
+          <div class="insight-card orange-accent">
+            <div class="insight-header">
+              <span class="insight-title">⏳ Dado Pendente</span>
+              <span class="insight-pill" style="background: var(--caoa-orange-bg); color: var(--caoa-orange);">Apuração</span>
+            </div>
+            <p class="insight-text">
+              Campinas registra 5 vendas de 0km no período; dados de compras e percentual de trade in em apuração final de fechamento.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Ford • Performance de Trade In</span>
+        <span class="slide-counter">12 / 15</span>
+      </footer>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 13: MARCAS CONSIDERADAS NA TROCA
+         ========================================== -->
+    <section class="slide" id="slide-13">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Inteligência de Mercado</span>
+          <h2 class="slide-title">MARCAS CONSIDERADAS NA TROCA</h2>
+          <p class="slide-subtitle">De quais marcas o consumidor está saindo para comprar os veículos das novas bandeiras chinesas</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> 3º Trimestre 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <div style="display: grid; grid-template-columns: 1.25fr 1fr; gap: 20px; flex: 1;">
+          <!-- Horizontal Bar Chart -->
+          <div class="card" style="padding: 16px 20px; display: flex; flex-direction: column;">
+            <div class="card-title">Ranking de Marcas Usadas Deixadas na Troca (%)</div>
+            <div style="flex: 1; position: relative; min-height: 270px;">
+              <canvas id="chart-slide13"></canvas>
+            </div>
+          </div>
+
+          <!-- Market Breakdown & Chinese Ecosystem Card -->
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="card" style="background: #1D184B; color: #FFFFFF; padding: 20px;">
+              <span style="font-size: 12px; font-weight: 700; color: var(--caoa-mint); text-transform: uppercase; letter-spacing: 1px;">Ecossistema de Conquista</span>
+              <h3 style="font-size: 22px; font-weight: 800; color: #FFFFFF; margin-top: 4px;">Marcas Destino na Compra</h3>
+              <p style="font-size: 14px; color: #D8DFE8; margin-top: 8px; line-height: 1.4;">
+                Veículos de marcas tradicionais deixados na troca para a aquisição de:
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px;">
+                <span style="background: rgba(255,255,255,0.12); padding: 6px 14px; border-radius: var(--radius-full); font-size: 13px; font-weight: 700; color: #FFFFFF;">CAOA CHERY</span>
+                <span style="background: rgba(255,255,255,0.12); padding: 6px 14px; border-radius: var(--radius-full); font-size: 13px; font-weight: 700; color: #FFFFFF;">GWM</span>
+                <span style="background: rgba(255,255,255,0.12); padding: 6px 14px; border-radius: var(--radius-full); font-size: 13px; font-weight: 700; color: #FFFFFF;">CHANGAN</span>
+                <span style="background: rgba(255,255,255,0.12); padding: 6px 14px; border-radius: var(--radius-full); font-size: 13px; font-weight: 700; color: #FFFFFF;">OMODA | JAECOO</span>
+                <span style="background: rgba(255,255,255,0.12); padding: 6px 14px; border-radius: var(--radius-full); font-size: 13px; font-weight: 700; color: #FFFFFF;">LEAPMOTOR</span>
+              </div>
+            </div>
+
+            <div class="card" style="flex: 1; padding: 18px; display: flex; flex-direction: column; justify-content: center; border-left: 6px solid var(--caoa-mint);">
+              <div style="font-size: 13px; font-weight: 700; color: var(--caoa-slate); text-transform: uppercase;">Fidelização Interna</div>
+              <div style="font-size: 38px; font-weight: 900; color: var(--caoa-navy); margin: 6px 0;">17,4%</div>
+              <p style="font-size: 13px; color: var(--caoa-charcoal); line-height: 1.4;">
+                * <strong>17,4% de todas as trocas já acontecem entre duas marcas chinesas</strong>, evidenciando alto índice de recompra e retenção do cliente na nova geração automotiva.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">🚙 Destaque em Jeep</span>
+              <span class="insight-pill">13,4%</span>
+            </div>
+            <p class="insight-text">
+              A <strong>Jeep lidera isolada com 13,4% das trocas</strong>, sinalizando que proprietários de Renegade e Compass são os que mais migram para o nosso mix de SUVs.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">🚗 Volkswagen e Toyota Fortes</span>
+              <span class="insight-pill" style="background: var(--caoa-blue-bg); color: var(--caoa-blue);">21,9% somadas</span>
+            </div>
+            <p class="insight-text">
+              <strong>Volkswagen mantém 12,5%</strong> e <strong>Toyota alcança 9,4%</strong>, consolidando a captação de clientes de marcas consagradas pela confiabilidade.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">📈 Mercado em Expansão</span>
+              <span class="insight-pill" style="background: rgba(29, 24, 75, 0.08); color: var(--caoa-navy);">17,4% retenção</span>
+            </div>
+            <p class="insight-text">
+              As marcas chinesas seguem conquistando espaço acelerado nos seminovos, com <strong>17,4% de fidelização direta</strong> entre as marcas do novo segmento.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Seminovos • Origem de Trocas de Usados</span>
+        <span class="slide-counter">13 / 15</span>
+      </footer>
+    </section>
+
+        <!-- ==========================================
+         SLIDE 14: COMO ESTÃO OS 40 SEMINOVOS (MY24-26)
+         ========================================== -->
+    <section class="slide" id="slide-14">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag">Portfólio de Seminovos</span>
+          <h2 class="slide-title">COMO ESTÃO OS 40 SEMINOVOS (MY24-26)</h2>
+          <p class="slide-subtitle">Os mais vendidos por Margem Bruta (%) e Atenção do Mercado (Velocidade de Giro / Penetração)</p>
+        </div>
+        <div class="header-right">
+          <div class="header-badge"><span class="badge-dot"></span> MY24-26</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <div style="display: grid; grid-template-columns: 1.25fr 1fr; gap: 20px; flex: 1;">
+          <!-- Scatter Plot Container -->
+          <div class="card" style="padding: 18px 22px; display: flex; flex-direction: column;">
+            <div class="card-title" style="font-size: 16px; font-weight: 800; color: var(--caoa-navy); margin-bottom: 8px;">
+              Matriz Estratégica: Margem Bruta (%) vs Penetração de Mercado (%)
+            </div>
+            <div style="flex: 1; position: relative; min-height: 270px;">
+              <canvas id="chart-slide14"></canvas>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 12.5px; font-weight: 700; color: var(--caoa-slate); margin-top: 8px; padding-top: 6px; border-top: 1px dashed var(--caoa-card-border);">
+              <span>← Menor Giro / Entrada Fácil</span>
+              <span style="color: var(--caoa-navy);">✦ Zona de Alta Rentabilidade ✦</span>
+              <span>Maior Penetração / Alto Volume →</span>
+            </div>
+          </div>
+
+          <!-- Highlights & Quadrants Info -->
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <!-- Tiggo 7 & Tiggo 5x Spotlight with Real 0KM Photos -->
+            <div class="card" style="background: linear-gradient(135deg, #1D184B 0%, #282163 100%); color: #FFFFFF; padding: 18px; border-left: 6px solid var(--caoa-mint); box-shadow: 0 10px 30px rgba(29, 24, 75, 0.25);">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 12px; font-weight: 800; color: var(--caoa-mint); text-transform: uppercase; letter-spacing: 1px;">👑 Destaques Absolutos do Mix • ZERO KM</span>
+                <span style="background: rgba(100, 194, 149, 0.2); border: 1px solid rgba(100, 194, 149, 0.4); padding: 3px 10px; border-radius: var(--radius-full); font-size: 11px; font-weight: 700; color: #8FE3BA;">Líderes de Rentabilidade</span>
+              </div>
+              <h3 style="font-size: 22px; font-weight: 900; color: #FFFFFF; margin: 4px 0 12px 0;">Tiggo 7 & Tiggo 5x 0KM: As Estrelas da Rede</h3>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+                <!-- Tiggo 7 Mini Card with Photo -->
+                <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(100,194,149,0.3); padding: 10px; border-radius: 10px; transition: transform 0.3s ease; position: relative;">
+                  <span style="position: absolute; top: 14px; right: 14px; background: rgba(18, 14, 51, 0.85); color: #8FE3BA; font-size: 9px; font-weight: 800; padding: 2px 5px; border-radius: 4px; border: 1px solid rgba(100,194,149,0.5);">NOVO 0KM</span>
+                  <img src="assets/tiggo7.jpg" alt="CAOA Chery Tiggo 7 Pro Sport 0KM" style="width: 100%; height: 95px; object-fit: cover; border-radius: 6px; margin-bottom: 8px; border: 1px solid rgba(255,255,255,0.2);">
+                  <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                    <div style="font-size: 17px; font-weight: 900; color: var(--caoa-mint);">Tiggo 7 Pro</div>
+                    <div style="font-size: 23px; font-weight: 900; color: #FFFFFF;">11,5%</div>
+                  </div>
+                  <div style="font-size: 11.5px; color: #D8DFE8; margin-top: 3px; font-weight: 600;">Margem Bruta (Mercado: 32%)</div>
+                </div>
+
+                <!-- Tiggo 5x Mini Card with Photo -->
+                <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(100,194,149,0.3); padding: 10px; border-radius: 10px; transition: transform 0.3s ease; position: relative;">
+                  <span style="position: absolute; top: 14px; right: 14px; background: rgba(18, 14, 51, 0.85); color: #8FE3BA; font-size: 9px; font-weight: 800; padding: 2px 5px; border-radius: 4px; border: 1px solid rgba(100,194,149,0.5);">NOVO 0KM</span>
+                  <img src="assets/tiggo5x.jpg" alt="CAOA Chery Tiggo 5x Pro Sport 0KM" style="width: 100%; height: 95px; object-fit: cover; border-radius: 6px; margin-bottom: 8px; border: 1px solid rgba(255,255,255,0.2);">
+                  <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                    <div style="font-size: 17px; font-weight: 900; color: #8FE3BA;">Tiggo 5x Pro</div>
+                    <div style="font-size: 23px; font-weight: 900; color: #FFFFFF;">9,8%</div>
+                  </div>
+                  <div style="font-size: 11.5px; color: #D8DFE8; margin-top: 3px; font-weight: 600;">Margem Bruta (Mercado: 29%)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quadrant Strategy Guide -->
+            <div class="card" style="flex: 1; padding: 14px 18px; display: flex; flex-direction: column; justify-content: space-around;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="width: 13px; height: 13px; border-radius: 50%; background: var(--caoa-mint); flex-shrink: 0;"></span>
+                <span style="font-size: 13.5px; font-weight: 800; color: var(--caoa-navy);">Cenário Ideal:</span>
+                <span style="font-size: 13px; color: var(--caoa-charcoal); font-weight: 500;"><strong>Tiggo 7, Tiggo 5x</strong>, Kwid, Mobi, Onix, HB20 (Alta margem e giro)</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="width: 13px; height: 13px; border-radius: 50%; background: var(--caoa-blue); flex-shrink: 0;"></span>
+                <span style="font-size: 13.5px; font-weight: 800; color: var(--caoa-navy);">Cenário Neutro:</span>
+                <span style="font-size: 13px; color: var(--caoa-slate); font-weight: 500;">Compass, Creta, Corolla Cross, T-Cross, Tracker (Equilíbrio de volume)</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="width: 13px; height: 13px; border-radius: 50%; background: var(--caoa-red); flex-shrink: 0;"></span>
+                <span style="font-size: 13.5px; font-weight: 800; color: var(--caoa-navy);">Atenção:</span>
+                <span style="font-size: 13px; color: var(--caoa-slate); font-weight: 500;">Montana, Duster, Virtus, Hilux, Ranger (Monitorar giro e preço)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Insights Strip -->
+        <div class="insights-strip">
+          <div class="insight-card mint-accent">
+            <div class="insight-header">
+              <span class="insight-title">💎 Destaque de Margem</span>
+              <span class="insight-pill">Rentabilidade</span>
+            </div>
+            <p class="insight-text">
+              <strong>Tiggo 7 (11,5%)</strong> e <strong>Tiggo 5x (9,8%)</strong> lideram a rentabilidade de todo o portfólio de seminovos com alto volume de busca.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">⚠️ Foco de Atenção</span>
+              <span class="insight-pill" style="background: var(--caoa-red-bg); color: var(--caoa-red);">Precificação</span>
+            </div>
+            <p class="insight-text">
+              Concentrar esforços de venda rápida em picapes médias e modelos de giro mais lento (Hilux, Ranger) para evitar acúmulo de capital.
+            </p>
+          </div>
+          <div class="insight-card">
+            <div class="insight-header">
+              <span class="insight-title">⚖️ Oportunidade de Equilíbrio</span>
+              <span class="insight-pill" style="background: rgba(29, 24, 75, 0.08); color: var(--caoa-navy);">Mix Ideal</span>
+            </div>
+            <p class="insight-text">
+              Aproveitar a complementaridade entre compactos de alto giro (HB20, Onix) e SUVs de margem superior (Tiggo 7/5x, Creta, Compass).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Seminovos • Matriz de Dispersão e Rentabilidade MY24-26</span>
+        <span class="slide-counter">14 / 15</span>
+      </footer>
+    </section>
+
+                <!-- ==========================================
+         SLIDE 15: PRINCIPAIS DESFECHOS E CURIOSIDADES - A SUPREMACIA TIGGO
+         ========================================== -->
+    <section class="slide" id="slide-15">
+      <header class="slide-header">
+        <div class="header-left">
+          <span class="category-tag" style="background: var(--caoa-mint-bg); color: var(--caoa-mint-dark);">Conclusões Estratégicas</span>
+          <h2 class="slide-title">A SUPREMACIA TIGGO & CONCLUSÕES EXECUTIVAS</h2>
+          <p class="slide-subtitle">Como o Tiggo 7 e o Tiggo 5x transformaram-se nos maiores geradores de lucro, liquidez e desejo do consumidor</p>
+        </div>
+        <div class="header-right" style="gap: 14px;">
+          <button class="header-action-btn" onclick="Presentation.downloadPDFReport()" title="Exportar Relatório Gerencial Completo em PDF">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span>Relatório PDF</span>
+          </button>
+          <div class="header-badge" style="border-color: rgba(100, 194, 149, 0.5);"><span class="badge-dot"></span> Outubro 2026</div>
+          <img src="assets/logo-navy.png" alt="CAOA Seminovos" class="header-logo">
+        </div>
+      </header>
+
+      <div class="slide-body">
+        <!-- VIP Crown Spotlight on Tiggo 7 & Tiggo 5x (ZERO KM MODELS) -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <!-- Tiggo 7 Crown Card (0KM) -->
+          <div class="card" style="background: linear-gradient(135deg, #1D184B 0%, #2A236C 100%); color: #FFFFFF; border-left: 6px solid var(--caoa-mint); padding: 18px 22px; box-shadow: 0 12px 35px rgba(29, 24, 75, 0.35);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span style="background: rgba(100, 194, 149, 0.2); border: 1px solid rgba(100, 194, 149, 0.5); padding: 4px 12px; border-radius: var(--radius-full); font-size: 11.5px; font-weight: 800; color: #8FE3BA; text-transform: uppercase;">
+                👑 O SOBERANO ABSOLUTO DOS SUVs MÉDIOS • ZERO KM
+              </span>
+              <span style="font-size: 13.5px; font-weight: 800; color: var(--caoa-mint);">Top #1 em Margem</span>
+            </div>
+            
+            <div style="display: flex; gap: 18px; align-items: center;">
+              <div style="position: relative; flex-shrink: 0;">
+                <img src="assets/tiggo7.jpg" alt="CAOA Chery Tiggo 7 Pro Sport 0KM" style="width: 220px; height: 135px; object-fit: cover; border-radius: 12px; border: 2px solid var(--caoa-mint); box-shadow: 0 8px 24px rgba(0,0,0,0.4);">
+                <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(18, 14, 51, 0.85); color: #8FE3BA; font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(100,194,149,0.5);">NOVO 0KM</span>
+              </div>
+              <div>
+                <div style="display: flex; align-items: baseline; gap: 10px;">
+                  <h3 style="font-size: 28px; font-weight: 900; color: #FFFFFF;">Tiggo 7</h3>
+                  <span style="font-size: 30px; font-weight: 900; color: var(--caoa-mint);">11,5%</span>
+                </div>
+                <div style="font-size: 12px; font-weight: 700; color: #8FE3BA; text-transform: uppercase; margin-bottom: 6px;">Margem Bruta Campeã • 13,4% das Trocas</div>
+                <p style="font-size: 12.5px; color: #E2E8F0; line-height: 1.45;">
+                  O <strong>Tiggo 7 é o fenômeno absoluto da CAOA Seminovos</strong>. Desbancou Compass e Corolla Cross, atraindo clientes com seu design imponente, acabamento premium e liquidez instantânea com a maior lucratividade por unidade.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tiggo 5x Crown Card (0KM) -->
+          <div class="card" style="background: linear-gradient(135deg, #154578 0%, #1D5E9E 100%); color: #FFFFFF; border-left: 6px solid #8FE3BA; padding: 18px 22px; box-shadow: 0 12px 35px rgba(21, 69, 120, 0.35);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); padding: 4px 12px; border-radius: var(--radius-full); font-size: 11.5px; font-weight: 800; color: #FFFFFF; text-transform: uppercase;">
+                ⭐ O QUERIDINHO DO BRASIL & CAMPEÃO DE GIRO • ZERO KM
+              </span>
+              <span style="font-size: 13.5px; font-weight: 800; color: #8FE3BA;">Giro Relâmpago</span>
+            </div>
+            
+            <div style="display: flex; gap: 18px; align-items: center;">
+              <div style="position: relative; flex-shrink: 0;">
+                <img src="assets/tiggo5x.jpg" alt="CAOA Chery Tiggo 5x Pro Sport 0KM" style="width: 220px; height: 135px; object-fit: cover; border-radius: 12px; border: 2px solid #8FE3BA; box-shadow: 0 8px 24px rgba(0,0,0,0.4);">
+                <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(18, 14, 51, 0.85); color: #8FE3BA; font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(143,227,186,0.5);">NOVO 0KM</span>
+              </div>
+              <div>
+                <div style="display: flex; align-items: baseline; gap: 10px;">
+                  <h3 style="font-size: 28px; font-weight: 900; color: #FFFFFF;">Tiggo 5x</h3>
+                  <span style="font-size: 30px; font-weight: 900; color: #8FE3BA;">9,8%</span>
+                </div>
+                <div style="font-size: 12px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; margin-bottom: 6px;">Margem Bruta (9,4% das Trocas)</div>
+                <p style="font-size: 12.5px; color: #E2E8F0; line-height: 1.45;">
+                  O <strong>Tiggo 5x é a máquina de rentabilidade e giro</strong>: permanência ultrarrápida no pátio, rentabilidade de 9,8% e atração irresistível sobre clientes de T-Cross, Tracker e Renegade, convertendo em capital imediato.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Central Summary Block -->
+        <div class="card" style="padding: 16px 22px; display: flex; flex-direction: column; justify-content: center; background: #FFFFFF; border: 1px solid var(--caoa-card-border);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span style="background: var(--caoa-navy); color: #FFFFFF; font-size: 12px; font-weight: 800; padding: 4px 12px; border-radius: var(--radius-full);">PILAR ESTRATÉGICO</span>
+              <h4 style="font-size: 18.5px; font-weight: 900; color: var(--caoa-navy);">A Conquista Definitiva de Mercado: De Onde Vêm Nossos Clientes?</h4>
+            </div>
+            <span style="font-size: 13.5px; font-weight: 800; color: var(--caoa-mint-dark);">+25,9% de Clientes Vindos de Jeep e VW!</span>
+          </div>
+          <p style="font-size: 14px; color: var(--caoa-charcoal); line-height: 1.5; font-weight: 500;">
+            Os números comprovam: os clientes estão abandonando montadoras consagradas para ingressar no universo de tecnologia e conforto da linha Tiggo. <strong>13,4% das trocas vieram de donos de Jeep</strong> e <strong>12,5% da Volkswagen</strong>, além de <strong>9,4% da Toyota</strong>.
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--caoa-card-border);">
+            <div style="background: #F8FAFD; padding: 10px 14px; border-radius: 8px;">
+              <div style="font-size: 13px; font-weight: 800; color: var(--caoa-navy);">🚀 Eficiência de Giro Máxima</div>
+              <p style="font-size: 12.5px; color: var(--caoa-slate); margin-top: 2px;">Giro médio de 19 dias (17 dias mais rápido que o mercado) impulsionado pelo apetite insaciável pelos Tiggos.</p>
+            </div>
+            <div style="background: #F8FAFD; padding: 10px 14px; border-radius: 8px;">
+              <div style="font-size: 13px; font-weight: 800; color: var(--caoa-navy);">🎯 Força de Trade In Recorde</div>
+              <p style="font-size: 12.5px; color: var(--caoa-slate); margin-top: 2px;">Taxa recorde de 43,31% de Trade In em novos em outubro, com mesas de avaliação ágeis e atrativas.</p>
+            </div>
+            <div style="background: rgba(100, 194, 149, 0.12); padding: 10px 14px; border-radius: 8px;">
+              <div style="font-size: 13px; font-weight: 800; color: var(--caoa-mint-dark);">🏆 Meta de 3.500 em Novembro</div>
+              <p style="font-size: 12.5px; color: var(--caoa-charcoal); margin-top: 2px; font-weight: 600;">Meta histórica de 3.500 unidades ancorada nos veículos mais desejados e rentáveis do Brasil.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive PDF Report Download Card -->
+        <div class="card pdf-report-card" style="background: linear-gradient(135deg, #0F0C2A 0%, #1D184B 50%, #154578 100%); color: #FFFFFF; border: 1.5px solid rgba(100, 194, 149, 0.45); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; border-radius: var(--radius-md); box-shadow: 0 12px 36px rgba(0,0,0,0.35);">
+          <div style="display: flex; align-items: center; gap: 18px;">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(100, 194, 149, 0.18); border: 1.5px solid var(--caoa-mint); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--caoa-mint)" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <h4 style="font-size: 18px; font-weight: 900; color: #FFFFFF;">Relatório Executivo Consolidado</h4>
+                <span style="background: var(--caoa-mint); color: #1D184B; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: var(--radius-full); text-transform: uppercase;">Pronto para Download / Impressão</span>
+              </div>
+              <p style="font-size: 13px; color: #D8DFE8; margin-top: 3px;">
+                Apresentação completa formatada em PDF de alta resolução (16:9 Landscape / A4) com todos os 15 slides, dados de vendas, giro e a supremacia Tiggo.
+              </p>
+            </div>
+          </div>
+          <button class="pdf-download-btn" onclick="Presentation.downloadPDFReport()" title="Gerar e Baixar Relatório em PDF">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Baixar Relatório PDF</span>
+          </button>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <span class="footer-left">CAOA Seminovos • Desfechos, Supremacia Tiggo & Diretrizes Estratégicas</span>
+        <span class="slide-counter">15 / 15</span>
+      </footer>
+    </section>
+
+  </div><!-- /slide-stage -->
+
+  <!-- Left & Right Screen Edge Chevron Click Zones -->
+  <div class="side-nav-zone prev" onclick="Presentation.prevSlide()" title="Slide Anterior (←)">
+    <div class="side-nav-arrow">‹</div>
+  </div>
+  <div class="side-nav-zone next" onclick="Presentation.nextSlide()" title="Próximo Slide (→)">
+    <div class="side-nav-arrow">›</div>
+  </div>
+
+</div><!-- /presentation-wrapper -->
+
+<!-- iPhone Dynamic Island Glass Toolbar -->
 <nav class="nav-toolbar" id="nav-toolbar">
   <button class="nav-pill-btn" onclick="Presentation.prevSlide()" title="Slide Anterior (←)">
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
   </button>
   
-  <div class="nav-pill-counter" onclick="Presentation.toggleOverview()" title="Ver Todos os Slides (O / Esc)">
-    <span class="counter-text"><span id="nav-counter">01</span><span class="counter-sep">/</span>15</span>
+  <div class="nav-pill-counter" onclick="Presentation.toggleOverview()" title="Clique para ver todos os slides (O / Esc)">
+    <span class="counter-text"><span id="nav-counter">01</span><span class="counter-sep">/</span><span class="counter-total">15</span></span>
+    <div class="nav-progress-track">
+      <div class="nav-progress-fill" id="nav-progress-fill"></div>
+    </div>
   </div>
 
   <button class="nav-pill-btn primary" onclick="Presentation.nextSlide()" title="Próximo Slide (→)">
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
   </button>
 
   <div class="nav-pill-divider"></div>
 
-  <button class="nav-pill-btn" id="btn-laser" onclick="Presentation.toggleLaser()" title="Apontador Laser (L)">
-    <svg width="15" height="15" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5" fill="#FF1A2A"/><circle cx="12" cy="12" r="9" stroke="#FF1A2A" stroke-width="2" stroke-dasharray="3 3"/></svg>
+  <button class="nav-pill-btn nav-pill-text-btn" id="btn-laser" onclick="Presentation.toggleLaser()" title="Apontador Laser Interativo (L)">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3.5" fill="#FF3B30"/><circle cx="12" cy="12" r="8" stroke="#FF3B30" stroke-dasharray="2 2"/></svg>
+    <span>Laser</span>
   </button>
 
-  <button class="nav-pill-btn" id="btn-super-zoom" onclick="Presentation.toggleSuperZoom()" title="Super Zoom dos Dados (Z)">
+  <button class="nav-pill-btn nav-pill-text-btn" id="btn-super-zoom" onclick="Presentation.toggleSuperZoom()" title="Super Zoom dos Dados e Gráficos (Z)">
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+    <span>Zoom</span>
   </button>
 
-  <button class="nav-pill-btn" onclick="Presentation.downloadPDFReport()" title="Baixar Relatório Executivo em PDF">
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="12" y2="18"/><line x1="15" y1="15" x2="12" y2="18"/></svg>
+  <button class="nav-pill-btn nav-pill-text-btn" onclick="Presentation.downloadPDFReport()" title="Baixar Relatório Executivo em PDF">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+    <span>PDF</span>
   </button>
 
   <button class="nav-pill-btn" onclick="Presentation.toggleFullscreen()" title="Tela Cheia (F)">
@@ -109,14 +1923,14 @@
   </button>
 
   <button class="nav-pill-btn nav-pill-btn-hide" onclick="Presentation.toggleToolbar()" title="Ocultar Menu (B)">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 15l-6-6-6 6"/></svg>
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
 </nav>
 
-<!-- Clean Restore Pill (Shown when toolbar is collapsed) -->
-<button class="toolbar-restore-pill" id="toolbar-show-btn" onclick="Presentation.toggleToolbar()" title="Exibir Menu (B)">
+<!-- Clean iPhone Glass Restore Pill (Shown when toolbar is collapsed) -->
+<button class="toolbar-restore-pill" id="toolbar-show-btn" onclick="Presentation.toggleToolbar()" title="Exibir Menu de Controles (B)">
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-  <span>Menu</span>
+  <span>Controles</span>
 </button>
 
 <!-- Interactive Presenter Laser Pointer -->
