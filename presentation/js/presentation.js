@@ -5,7 +5,7 @@
 
 const Presentation = (function () {
   let currentSlide = 1;
-  const totalSlides = 15;
+  const totalSlides = 16;
   let autoPlayInterval = null;
   let autoPlayActive = false;
   let isToolbarVisible = true;
@@ -425,13 +425,60 @@ const Presentation = (function () {
     }
   }
 
+  const slideTitles = [
+    "Capa Executiva Master",
+    "Resultados de Outubro (KPIs)",
+    "Volume e Margem (Evolução 2026)",
+    "Giro e Estoque (Envelhecimento)",
+    "Mesa de Avaliação (Trade In)",
+    "Mesa de Avaliação (Evolução 2026)",
+    "Precificação x Captação (AutoAvaliar)",
+    "Vendas por Marca (Operações Exclusivas)",
+    "Ranking Trade In: Chery / D21",
+    "Ranking Trade In: Changan / A21",
+    "Ranking Trade In: Hyundai / HMB",
+    "Ranking Trade In: Ford",
+    "Origem das Trocas nas Marcas Chinesas",
+    "Matriz Giro x Margem (40 Modelos)",
+    "Prioridades do Próximo Ciclo",
+    "Conclusão & Relatório PDF"
+  ];
+
+  function buildOverviewGrid() {
+    const grid = document.getElementById('overview-grid');
+    if (!grid || grid.children.length > 0) return;
+    
+    grid.innerHTML = '';
+    for (let i = 1; i <= totalSlides; i++) {
+      const card = document.createElement('div');
+      card.className = 'thumb-card' + (i === currentSlide ? ' active-thumb' : '');
+      card.setAttribute('data-slide', i);
+      card.onclick = () => {
+        goToSlide(i);
+        closeModals();
+      };
+      
+      const numBadge = document.createElement('div');
+      numBadge.className = 'thumb-num';
+      numBadge.innerText = String(i).padStart(2, '0');
+      
+      const titleSpan = document.createElement('div');
+      titleSpan.className = 'thumb-title';
+      titleSpan.innerText = slideTitles[i - 1] || `Slide ${i}`;
+      
+      card.appendChild(numBadge);
+      card.appendChild(titleSpan);
+      grid.appendChild(card);
+    }
+  }
+
   function toggleOverview() {
     const modal = document.getElementById('overview-modal');
     if (modal) {
+      buildOverviewGrid();
       const isOpening = !modal.classList.contains('active');
       modal.classList.toggle('active');
       if (isOpening) {
-        // Highlight active slide thumbnail
         document.querySelectorAll('.thumb-card').forEach(card => {
           const slideNum = parseInt(card.getAttribute('data-slide'));
           if (slideNum === currentSlide) {
@@ -464,14 +511,10 @@ const Presentation = (function () {
   function renderChartForSlide(slideNum) {
     if (typeof Chart === 'undefined') return;
 
-    if (slideNum === 2 && !charts['chart-slide2']) {
+    if (slideNum === 3 && !charts['chart-slide2']) {
       createSlide2Chart();
-    } else if (slideNum === 4 && !charts['chart-slide4-a']) {
+    } else if (slideNum === 6 && !charts['chart-slide4-a']) {
       createSlide4Charts();
-    } else if (slideNum === 5 && !charts['chart-slide5']) {
-      createSlide5Chart();
-    } else if (slideNum === 7 && !charts['chart-slide7']) {
-      createSlide7Chart();
     } else if (slideNum === 13 && !charts['chart-slide13']) {
       createSlide13Chart();
     } else if (slideNum === 14 && !charts['chart-slide14']) {

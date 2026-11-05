@@ -1395,6 +1395,54 @@ body.super-zoom .data-table tbody tr:hover .badge-pill {
   pointer-events: auto;
 }
 
+
+/* Overview Grid Modal Styling */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 30px 40px;
+  overflow-y: auto;
+  max-height: 88vh;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.thumb-card {
+  background: #1D184B !important;
+  border: 2px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 12px !important;
+  padding: 16px 18px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.thumb-card:hover, .thumb-card.active-thumb {
+  border-color: var(--caoa-mint) !important;
+  transform: translateY(-4px) scale(1.03) !important;
+  box-shadow: 0 12px 30px rgba(100, 194, 149, 0.35) !important;
+  background: #251F5C !important;
+}
+
+.thumb-num {
+  font-family: var(--font-display) !important;
+  font-size: 17px !important;
+  font-weight: 900 !important;
+  color: var(--caoa-mint) !important;
+}
+
+.thumb-title {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  line-height: 1.35 !important;
+}
+
 .modal-header {
   padding: 24px 60px;
   display: flex;
