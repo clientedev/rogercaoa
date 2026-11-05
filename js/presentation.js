@@ -195,6 +195,19 @@ const Presentation = (function () {
   }
 
   function setupEventListeners() {
+    // Stop propagation on table containers so horizontal drag scrolls table smoothly
+    document.querySelectorAll('.table-container').forEach(tc => {
+      tc.addEventListener('touchstart', (e) => {
+        e.stopPropagation();
+      }, { passive: true });
+      tc.addEventListener('touchmove', (e) => {
+        e.stopPropagation();
+      }, { passive: true });
+      tc.addEventListener('touchend', (e) => {
+        e.stopPropagation();
+      }, { passive: true });
+    });
+
     // Keyboard Navigation
     document.addEventListener('keydown', (e) => {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
